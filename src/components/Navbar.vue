@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark px-3 mt-5 sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark px-3 sticky-top">
     <router-link
       class="navbar-brand d-flex position-relative"
       :to="{ name: 'Home' }"
@@ -48,7 +48,7 @@ export default {
 <style scoped>
 .logo {
   width: 8em;
-  top: -2.75em;
+  top: -1em;
   z-index: 5;
   border-top: 3px black double;
   border-bottom: 3px black double;
@@ -66,8 +66,6 @@ a:hover {
   border-bottom-right-radius: 0;
 }
 .navbar {
-  border-top: 3px black double;
-  border-bottom: 3px black double;
-  background-color: whitesmoke;
+  background-color: white;
 }
 </style>
