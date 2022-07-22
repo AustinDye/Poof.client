@@ -1,10 +1,10 @@
 <template>
-  <div class="">
+  <div class="container-fluid">
     <!--TOP SECTION-->
 
-    <div class="row grad mt-5">
-      <div class="col-md-5 mt-5 ps-5 pt-5">
-        <div class="px-5 pt-5">
+    <div class="row grad mt-5 px-5">
+      <div class="col-md-5 mt-5 pt-5 px-5">
+        <div class="pt-5">
           <b class="text-center fs-1"
             >Our Fuzzy Friends Deserve to be Pampered</b
           >
@@ -27,9 +27,9 @@
 
     <!--MID SECTION-->
 
-    <div class="row bg-info shadow">
-      <div class="col-md-5 d-flex py-5 p-2 justify-content-center">
-        <div class="img-container round-dog position-relative">
+    <div class="row bg-info shadow p-5">
+      <div class="col-md-5 d-flex p-5 justify-content-center">
+        <div class="img-container round-dog p-2">
           <img
             class="img-fluid"
             src="src/assets/img/doggo2-removebg.png"
@@ -37,33 +37,28 @@
           />
         </div>
       </div>
-      <div class="col-md-7 mt-5 justify-content-centers about-service">
-        <div class="">
+      <div class="col-md-7 my-5 about-service px-4">
+        <div class="mb-5">
           <b class="text-center fs-1">What we do:</b>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
             aliquid veritatis voluptatum enim a placeat deleniti quas ipsa.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
-            earum velit aut vitae ut praesentium est a architecto, provident
-            impedit porro natus. Praesentium dolor iusto neque eius, officia
-            eligendi inventore!
           </p>
         </div>
 
-        <div class="content-box p-2 m-4">
+        <div class="content-box p-2 m-4 my-5">
           <h1><i class="mdi mdi-content-cut mx-3"></i>Grooming</h1>
           <div class="row">
             <div class="col-12 px-3">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. A alias
               ipsa tempore impedit, sed odio mollitia cumque eligendi placeat
               quia quas. Lorem ipsum dolor, sit amet consectetur adipisicing
-              elit. A alias ipsa tempore impedit, sed odio mollitia cumque
-              eligendi placeat quia quas.
+              elit.
             </div>
           </div>
         </div>
 
-        <div class="content-box p-2 m-4">
+        <div class="content-box p-2 m-4 my-5">
           <h1><i class="mdi mdi-shower mx-3"></i>Bathing</h1>
 
           <div class="row">
@@ -74,7 +69,7 @@
             </div>
           </div>
         </div>
-        <div class="content-box p-2 m-4">
+        <div class="content-box p-2 m-4 my-5">
           <h1><i class="mdi mdi-hair-dryer mx-3"></i>More!</h1>
           <div class="row">
             <div class="col-12 px-3">
@@ -89,8 +84,8 @@
 
     <!--BOTTOM SECTION-->
 
-    <div class="row bg-white py-5 p-5">
-      <div class="col-12">
+    <div class="row bg-white p-5">
+      <div class="col-md-8 p-5">
         <b class="text-center fs-1">Who We Are:</b>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
@@ -98,79 +93,21 @@
           ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum
           velit aut vitae ut praesentium est a architecto, provident impedit
           porro natus. Praesentium dolor iusto neque eius, officia eligendi
-          inventore!
+          inventore!Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Voluptate aliquid veritatis voluptatum enim a placeat deleniti quas
+          ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Dolores, earum velit aut vitae ut praesentium est a architecto,
+          provident impedit porro natus. Praesentium dolor iusto neque eius,
+          officia eligendi inventore!
         </p>
       </div>
-      <div class="col-md-6 mt-5 justify-content-center">
-        <div class="content-box my-5">
-          <div class="row">
-            <div class="col-6">
-              <img
-                class="img-fluid content-box"
-                src="https://media.gettyimages.com/photos/groomer-with-a-dog-picture-id86522010?s=2048x2048"
-                alt=""
-              />
-            </div>
-            <div class="col-6 px-3">
-              <h1><i class="mdi mdi-content-cut mx-3"></i>Jane Doe</h1>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. A alias
-              ipsa tempore impedit, sed odio mollitia cumque eligendi placeat
-              quia quas.
-            </div>
-          </div>
-        </div>
-        <div class="content-box my-5">
-          <div class="row">
-            <div class="col-6">
-              <img
-                class="img-fluid content-box"
-                src="https://media.gettyimages.com/photos/groomer-with-a-dog-picture-id86522010?s=2048x2048"
-                alt=""
-              />
-            </div>
-            <div class="col-6 px-3">
-              <h1><i class="mdi mdi-content-cut mx-3"></i>Jane Doe</h1>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. A alias
-              ipsa tempore impedit, sed odio mollitia cumque eligendi placeat
-              quia quas.
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 mt-5 justify-content-center">
-        <div class="content-box my-5">
-          <div class="row">
-            <div class="col-6">
-              <img
-                class="img-fluid content-box"
-                src="https://media.gettyimages.com/photos/groomer-with-a-dog-picture-id86522010?s=2048x2048"
-                alt=""
-              />
-            </div>
-            <div class="col-6 px-3">
-              <h1><i class="mdi mdi-content-cut mx-3"></i>Jane Doe</h1>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. A alias
-              ipsa tempore impedit, sed odio mollitia cumque eligendi placeat
-              quia quas.
-            </div>
-          </div>
-        </div>
-        <div class="content-box my-5">
-          <div class="row">
-            <div class="col-6">
-              <img
-                class="img-fluid content-box"
-                src="https://media.gettyimages.com/photos/groomer-with-a-dog-picture-id86522010?s=2048x2048"
-                alt=""
-              />
-            </div>
-            <div class="col-6 px-3">
-              <h1><i class="mdi mdi-content-cut mx-3"></i>Jane Doe</h1>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. A alias
-              ipsa tempore impedit, sed odio mollitia cumque eligendi placeat
-              quia quas.
-            </div>
-          </div>
+      <div class="col-md-4">
+        <div class="img-container rounded-circle bg-info">
+          <img
+            src="src/assets/img/blackdoggo-removebg-preview.png"
+            alt=""
+            class="img-fluid"
+          />
         </div>
       </div>
     </div>
