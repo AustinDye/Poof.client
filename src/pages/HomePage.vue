@@ -2,34 +2,20 @@
   <div class="">
     <!--TOP SECTION-->
 
-    <div class="row grad">
-      <div class="col-md-6 mt-5 ps-5 pt-5">
-        <div>
+    <div class="row grad mt-5">
+      <div class="col-md-5 mt-5 ps-5 pt-5">
+        <div class="px-5 pt-5">
           <b class="text-center fs-1"
             >Our Fuzzy Friends Deserve to be Pampered</b
           >
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
             aliquid veritatis voluptatum enim a placeat deleniti quas ipsa.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
-            earum velit aut vitae ut praesentium est a architecto, provident
-            impedit porro natus. Praesentium dolor iusto neque eius, officia
-            eligendi inventore!
           </p>
-          <span class="d-flex justify-content-around">
-            <i>Baths</i>
-            <b>|</b>
-
-            <i>Haircuts</i>
-            <b>|</b>
-            <i>Nails</i>
-            <b>|</b>
-            <i>and More!</i>
-          </span>
         </div>
       </div>
-      <div class="col-md-6 mt-5">
-        <div class="img-container">
+      <div class="col-md-7">
+        <div class="img-container rounded-pill shadow round-dog-2">
           <img
             class="img-fluid"
             src="src/assets/img/3dogsnobackground.png"
@@ -41,7 +27,7 @@
 
     <!--MID SECTION-->
 
-    <div class="row bg-info">
+    <div class="row bg-info shadow">
       <div class="col-md-5 d-flex py-5 p-2 justify-content-center">
         <div class="img-container round-dog position-relative">
           <img
@@ -103,7 +89,7 @@
 
     <!--BOTTOM SECTION-->
 
-    <div class="row bg-success py-5 p-5">
+    <div class="row bg-white py-5 p-5">
       <div class="col-12">
         <b class="text-center fs-1">Who We Are:</b>
         <p>
@@ -220,12 +206,16 @@ export default {
 }
 
 .round-dog {
-  border-radius: 10em;
+  border-radius: 15em;
   background-image: linear-gradient(
     to bottom,
     rgba($success, 0.88),
     rgb(255, 255, 255)
   );
+}
+.round-dog-top {
+  border-radius: 15em;
+  background-color: rgba($info, 0.2);
 }
 
 h1 {
@@ -245,5 +235,10 @@ b {
   background-color: rgba(0, 0, 0, 0.404);
   color: yellow;
   font-family: "Bungee", cursive;
+}
+
+.round-dog-2 {
+  margin-top: 5em;
+  background-color: rgba(0, 0, 0, 0.131);
 }
 </style>
