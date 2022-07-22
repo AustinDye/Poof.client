@@ -28,8 +28,10 @@
     <!--MID SECTION-->
 
     <div class="row bg-info shadow p-5">
-      <div class="col-md-5 d-flex p-5 justify-content-center">
-        <div class="img-container round-dog p-2">
+      <div class="col-md-5 d-flex py-5 justify-content-center">
+        <div
+          class="img-container bg-danger rounded-pill round-dog p-2 bg-success"
+        >
           <img
             class="img-fluid"
             src="src/assets/img/doggo2-removebg.png"
@@ -37,7 +39,7 @@
           />
         </div>
       </div>
-      <div class="col-md-7 my-5 about-service px-4">
+      <div class="col-md-7 my-5 about-service">
         <div class="mb-5">
           <b class="text-center fs-1">What we do:</b>
           <p>
@@ -49,7 +51,7 @@
         <div class="content-box p-2 m-4 my-5">
           <h1><i class="mdi mdi-content-cut mx-3"></i>Grooming</h1>
           <div class="row">
-            <div class="col-12 px-3">
+            <div class="col-12">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. A alias
               ipsa tempore impedit, sed odio mollitia cumque eligendi placeat
               quia quas. Lorem ipsum dolor, sit amet consectetur adipisicing
@@ -60,9 +62,8 @@
 
         <div class="content-box p-2 m-4 my-5">
           <h1><i class="mdi mdi-shower mx-3"></i>Bathing</h1>
-
           <div class="row">
-            <div class="col-12 px-3">
+            <div class="col-12">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. A alias
               ipsa tempore impedit, sed odio mollitia cumque eligendi placeat
               quia quas.
@@ -84,7 +85,7 @@
 
     <!--BOTTOM SECTION-->
 
-    <div class="row bg-white p-5">
+    <div class="row bg-white p-5 shadow-sm">
       <div class="col-md-8 p-5">
         <b class="text-center fs-1">Who We Are:</b>
         <p>
@@ -109,6 +110,29 @@
             class="img-fluid"
           />
         </div>
+      </div>
+    </div>
+
+    <div class="row p-5">
+      <div class="col-md-8 p-5">
+        <h1 class="py-2">Come See Us</h1>
+        <img
+          class="img-fluid my-5"
+          src="https://developers.google.com/static/codelabs/maps-platform/full-stack-store-locator/img/58a6680e9c8e7396.png"
+          alt=""
+        />
+
+        <h6>10542 West Fairview Avenue, Boise, ID, United States, 83704</h6>
+      </div>
+      <div class="col-md-4 p-5">
+        <h1 class="py-2">Hours</h1>
+        <h5>Monday: 7:30am - 3:30pm</h5>
+        <h5>Tuesday: 7:30am - 3:30pm</h5>
+        <h5>Wednsday: 7:30am - 3:30pm</h5>
+        <h5>Thursday: 7:30am - 3:30pm</h5>
+        <h5>Friday: 7:30am - 3:30pm</h5>
+        <h5>Saturday: 7:30am - 3:30pm</h5>
+        <h5>Sunday: Closed</h5>
       </div>
     </div>
   </div>
@@ -142,14 +166,6 @@ export default {
   );
 }
 
-.round-dog {
-  border-radius: 15em;
-  background-image: linear-gradient(
-    to bottom,
-    rgba($success, 0.88),
-    rgb(255, 255, 255)
-  );
-}
 .round-dog-top {
   border-radius: 15em;
   background-color: rgba($info, 0.2);

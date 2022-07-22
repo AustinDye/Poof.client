@@ -22,11 +22,9 @@
             <div class="col-4 text-center"><b class="btn">About</b></div>
             <div class="col-4 text-center"><b class="btn">Location</b></div>
           </div>
-          <!--<i class="mdi mdi-map mx-1"></i>
-          <h6>10542 West Fairview Avenue, Boise, ID, United States, 83704</h6>>-->
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 ps-5">
           <span class="d-flex">
             <i class="mdi mdi-phone mx-1"></i>
             <h5>208-555-5555</h5>
