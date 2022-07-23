@@ -1,10 +1,11 @@
 <template>
+  <button class="btn" @click="scrollToElement">sffgf</button>
   <div class="container-fluid">
     <!--TOP SECTION-->
 
-    <div class="row grad mt-5 px-5">
+    <div class="row grad mt-5 px-5 top-area">
       <div class="col-md-5 mt-5 pt-5 px-5">
-        <div class="pt-5">
+        <div class="py-5">
           <b class="text-center fs-1"
             >Our Fuzzy Friends Deserve to be Pampered</b
           >
@@ -14,8 +15,15 @@
           </p>
         </div>
       </div>
-      <div class="col-md-7">
-        <div class="img-container rounded-circle shadow round-dog-2">
+      <div class="col-md-7 d-flex">
+        <div class="img-container d-none d-md-flex">
+          <img
+            class="img-fluid"
+            src="src/assets/img/3dogsnobackground.png"
+            alt=""
+          />
+        </div>
+        <div class="img-container d-md-none d-flex">
           <img
             class="img-fluid"
             src="src/assets/img/3dogsnobackground.png"
@@ -27,14 +35,10 @@
 
     <!--MID SECTION-->
 
-    <div class="row bg-info shadow p-5">
-      <div class="col-md-5 d-flex p-5 justify-content-center">
-        <div class="img-container bg-danger rounded-circle p-2 bg-success">
-          <img
-            class="img-fluid"
-            src="src/assets/img/doggo2-removebg.png"
-            alt=""
-          />
+    <div id="mid-area" class="row bg-info p-5" ref="middle">
+      <div class="col-md-5 p-5 mt-5">
+        <div class="rounded-circle bg-dark">
+          <img class="" src="src/assets/img/dog_PNG50322.png" alt="" />
         </div>
       </div>
       <div class="col-md-7 my-5 about-service">
@@ -84,24 +88,78 @@
     <!--BOTTOM SECTION-->
 
     <div class="row bg-white p-5 shadow-sm">
-      <div class="col-md-8 p-5">
-        <b class="text-center fs-1">Who We Are:</b>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
-          aliquid veritatis voluptatum enim a placeat deleniti quas ipsa. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum
-          velit aut vitae ut praesentium est a architecto, provident impedit
-          porro natus. Praesentium dolor iusto neque eius, officia eligendi
-          inventore!Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Voluptate aliquid veritatis voluptatum enim a placeat deleniti quas
-          ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Dolores, earum velit aut vitae ut praesentium est a architecto,
-          provident impedit porro natus. Praesentium dolor iusto neque eius,
-          officia eligendi inventore!
-        </p>
+      <div class="col-md-8 py-5">
+        <div>
+          <b class="text-center fs-1">Who We Are:</b>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
+            aliquid veritatis voluptatum enim a placeat deleniti quas ipsa.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
+            earum velit aut vitae ut praesentium est a architecto, provident
+            impedit porro natus. Praesentium dolor iusto neque eius, officia
+            eligendi inventore!Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Voluptate aliquid veritatis voluptatum enim a
+            placeat deleniti quas ipsa. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Dolores, earum velit aut vitae ut praesentium est
+            a architecto, provident impedit porro natus. Praesentium dolor iusto
+            neque eius, officia eligendi inventore!
+          </p>
+        </div>
+        <div>
+          <div class="row pt-5">
+            <div class="col-md-4 py-2">
+              <div class="card p-3">
+                <div class="div d-flex justify-content-center pb-2">
+                  <i class="mdi mdi-star text-success fs-4"></i
+                  ><i class="mdi mdi-star text-success fs-4"></i
+                  ><i class="mdi mdi-star text-success fs-4"></i
+                  ><i class="mdi mdi-star text-success fs-4"></i
+                  ><i class="mdi mdi-star text-success fs-4"></i>
+                </div>
+                <i class=""
+                  >"My dog, Koda, was groomed by Jamie and I can’t even begin to
+                  tell you how fantastic he looks! I love coming here!"
+                </i>
+                <h6 class="pt-3">- Reviewer</h6>
+              </div>
+            </div>
+            <div class="col-md-4 py-2">
+              <div class="card p-3">
+                <div class="div d-flex justify-content-center pb-2">
+                  <i class="mdi mdi-star text-success fs-4"></i
+                  ><i class="mdi mdi-star text-success fs-4"></i
+                  ><i class="mdi mdi-star text-success fs-4"></i
+                  ><i class="mdi mdi-star text-success fs-4"></i
+                  ><i class="mdi mdi-star text-success fs-4"></i>
+                </div>
+                <i class=""
+                  >"My dog, Koda, was groomed by Jamie and I can’t even begin to
+                  tell you how fantastic he looks! I love coming here!"
+                </i>
+                <h6 class="pt-3">- Reviewer</h6>
+              </div>
+            </div>
+            <div class="col-md-4 py-2">
+              <div class="card p-3">
+                <div class="div d-flex justify-content-center pb-2">
+                  <i class="mdi mdi-star text-success fs-4"></i
+                  ><i class="mdi mdi-star text-success fs-4"></i
+                  ><i class="mdi mdi-star text-success fs-4"></i
+                  ><i class="mdi mdi-star text-success fs-4"></i
+                  ><i class="mdi mdi-star text-success fs-4"></i>
+                </div>
+                <i class=""
+                  >"My dog, Koda, was groomed by Jamie and I can’t even begin to
+                  tell you how fantastic he looks! I love coming here!"
+                </i>
+                <h6 class="pt-3">- Reviewer</h6>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-4">
-        <div class="img-container rounded-circle bg-info">
+      <div class="col-md-4 pt-4">
+        <div class="img-container rounded-circle bg-info mt-5">
           <img
             src="src/assets/img/blackdoggo-removebg-preview.png"
             alt=""
@@ -139,6 +197,18 @@
 <script>
 export default {
   name: "Home",
+  mounted() {
+    this.$refs.middle;
+  },
+
+  methods: {
+    scrollToElement() {
+      let el = this.$refs.middle;
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    },
+  },
 };
 </script>
 
@@ -151,17 +221,14 @@ export default {
   // box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.195);
 }
 
-.img-container img {
+img {
   object-fit: contain;
   width: 100%;
   height: 100%;
 }
-.grad {
-}
 
 .round-dog-top {
   border-radius: 15em;
-  background-color: rgba($info, 0.2);
 }
 
 h1 {
@@ -183,8 +250,7 @@ b {
   font-family: "Bungee", cursive;
 }
 
-.round-dog-2 {
-  margin-top: 5em;
-  background-color: rgba($info, 1);
+.mid-area {
+  z-index: 100;
 }
 </style>
