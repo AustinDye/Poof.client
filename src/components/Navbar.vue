@@ -1,7 +1,12 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark px-3 sticky-top shadow-sm">
     <router-link class="navbar-brand d-flex" :to="{ name: 'Home' }">
-      <img class="logo rounded" src="src/assets/img/pooflogo.jpeg" alt="" />
+      <img
+        class="logo rounded"
+        src="src/assets/img/pooflogo.jpeg"
+        alt=""
+        @click="$emit('scroll', 'top')"
+      />
     </router-link>
     <button
       class="navbar-toggler bg-primary"
@@ -18,9 +23,15 @@
       <div class="row navbar-nav w-100">
         <div class="col-md-8 d-flex justify-content-center align-items-center">
           <div class="row">
-            <div class="col-4 text-center"><b class="btn">Services</b></div>
-            <div class="col-4 text-center"><b class="btn">About</b></div>
-            <div class="col-4 text-center"><b class="btn">Location</b></div>
+            <div class="col-4 text-center">
+              <b class="btn" @click="$emit('scroll', 'middle')">Services</b>
+            </div>
+            <div class="col-4 text-center">
+              <b class="btn" @click="$emit('scroll', 'bottom')">About</b>
+            </div>
+            <div class="col-4 text-center">
+              <b class="btn" @click="$emit('scroll', 'wayBottom')">Location</b>
+            </div>
           </div>
         </div>
 
