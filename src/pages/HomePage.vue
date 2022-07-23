@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="col-md-7">
-        <div class="img-container rounded-pill shadow round-dog-2">
+        <div class="img-container rounded-circle shadow round-dog-2">
           <img
             class="img-fluid"
             src="src/assets/img/3dogsnobackground.png"
@@ -28,10 +28,8 @@
     <!--MID SECTION-->
 
     <div class="row bg-info shadow p-5">
-      <div class="col-md-5 d-flex py-5 justify-content-center">
-        <div
-          class="img-container bg-danger rounded-pill round-dog p-2 bg-success"
-        >
+      <div class="col-md-5 d-flex p-5 justify-content-center">
+        <div class="img-container bg-danger rounded-circle p-2 bg-success">
           <img
             class="img-fluid"
             src="src/assets/img/doggo2-removebg.png"
@@ -159,11 +157,6 @@ export default {
   height: 100%;
 }
 .grad {
-  background-image: linear-gradient(
-    to bottom,
-    rgb(255, 255, 255),
-    rgba($success, 0.88)
-  );
 }
 
 .round-dog-top {
@@ -192,6 +185,6 @@ b {
 
 .round-dog-2 {
   margin-top: 5em;
-  background-color: rgba(0, 0, 0, 0.131);
+  background-color: rgba($info, 1);
 }
 </style>
