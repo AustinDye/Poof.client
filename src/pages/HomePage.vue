@@ -184,12 +184,12 @@
           <div class="color-splash mb-3 bg-danger w-25"></div>
           <h4>10542 W Fairview Ave, Boise, ID 83704</h4>
         </div>
-        <div class="col-md-6 p-5">
+        <div class="col-6 p-5">
           <GMapMap
             :center="center"
             :zoom="13"
             map-type-id="roadmap"
-            style="width: 100%; height: 100%; border-radius: 10px"
+            style="width: 100%; height: 50vh; border-radius: 10px"
           >
             <GMapCluster>
               <GMapMarker
@@ -203,47 +203,6 @@
             </GMapCluster>
           </GMapMap>
         </div>
-        <div class="col-md-6 d-flex flex-column p-5 my-2">
-          <h1 class="py-2 text-center">Hours</h1>
-
-          <div class="row">
-            <div class="col-12 d-flex justify-content-between py-3">
-              <h4>Monday</h4>
-              <h5>7:30am - 3:30pm</h5>
-            </div>
-            <div class="col-12 d-flex justify-content-between py-3">
-              <h4>Tuesday</h4>
-              <h5>7:30am - 3:30pm</h5>
-            </div>
-            <div class="col-12 d-flex justify-content-between py-3">
-              <h4>Wednesday</h4>
-              <h5>7:30am - 3:30pm</h5>
-            </div>
-            <div class="col-12 d-flex justify-content-between py-3">
-              <h4>Thursday</h4>
-              <h5>7:30am - 3:30pm</h5>
-            </div>
-            <div class="col-12 d-flex justify-content-between py-3">
-              <h4>Friday</h4>
-              <h5>7:30am - 3:30pm</h5>
-            </div>
-            <div class="col-12 d-flex justify-content-between py-3">
-              <h4>Saturday</h4>
-              <h5>7:30am - 3:30pm</h5>
-            </div>
-            <div class="col-12 d-flex justify-content-between py-3">
-              <h4>Sunday</h4>
-              <h5>-CLOSED-</h5>
-            </div>
-          </div>
-        </div>
-        <!--<div class="col-md-4 d-flex flex-column p-5">
-          <img
-            src="https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/248908749_206727238259254_5009755208474238134_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=O4LP8Hk3URUAX8pImHG&_nc_ht=scontent-sea1-1.xx&oh=00_AT-Ie5QN3GaJB7vnoQH3vt4Xi_IGHgnGVSwLifOpQMq1Rg&oe=62E210C7"
-            alt=""
-            class="rounded-3"
-          />
-        </div>-->
       </div>
     </div>
   </main>
@@ -329,6 +288,9 @@ b {
   font-family: "Bungee", cursive;
 }
 
+.date-box {
+  outline: 2px rgba(6, 6, 6, 0.297) solid;
+}
 .mid-area {
   z-index: 100;
 }
