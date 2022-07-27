@@ -8,16 +8,22 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: rgb(248, 255, 249);
+  color: #676767;
+  background-color: white;
 }
 
 main {
   flex-grow: 1;
-  background-color: rgb(251, 255, 251);
+  background-color: white;
 }
 
 a {
   text-decoration: none;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.2em;
 }
 
 input,

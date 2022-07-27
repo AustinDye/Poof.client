@@ -79,6 +79,9 @@ a:hover {
   border-bottom-right-radius: 0;
 }
 .navbar {
-  background-color: white;
+  background-color: rgba(244, 244, 244, 0.959);
+}
+.color-splash {
+  height: 0.2em;
 }
 </style>
