@@ -23,13 +23,16 @@
       <div class="row navbar-nav w-100">
         <div class="col-md-8 d-flex justify-content-center align-items-center">
           <div class="row">
-            <div class="col-4 text-center">
+            <div class="col-3 text-center">
               <b class="btn" @click="$emit('scroll', 'middle')">Services</b>
             </div>
-            <div class="col-4 text-center">
+            <div class="col-3 text-center">
               <b class="btn" @click="$emit('scroll', 'bottom')">About</b>
             </div>
-            <div class="col-4 text-center">
+            <div class="col-3 text-center">
+              <b class="btn" @click="$emit('scroll', 'gallery')">Gallery</b>
+            </div>
+            <div class="col-3 text-center">
               <b class="btn" @click="$emit('scroll', 'wayBottom')">Location</b>
             </div>
           </div>
@@ -80,8 +83,16 @@ a:hover {
 }
 .navbar {
   background-color: rgba(244, 244, 244, 0.959);
+  font-family: "Lato", sans-serif;
 }
 .color-splash {
   height: 0.2em;
+}
+
+b {
+  font-family: "Inter", sans-serif;
+
+  color: rgb(39, 39, 39);
+  font-weight: bold;
 }
 </style>

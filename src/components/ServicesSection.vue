@@ -1,0 +1,62 @@
+<template>
+  <div class="col-md-5 mt-5">
+    <div class="rounded-circle bg-white">
+      <img
+        class=""
+        src="https://jankrepl.github.io/assets/images/symbolic_regression/main_files/cute-dog-transparent-background.png"
+        alt=""
+      />
+    </div>
+  </div>
+  <div class="col-md-7 my-5 about-service">
+    <div class="p-3">
+      <h1 class="text-white">What We Do</h1>
+      <div class="color-splash mb-3 bg-success w-50"></div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
+        aliquid veritatis voluptatum enim a placeat deleniti quas ipsa.
+      </p>
+    </div>
+
+    <div class="content-box p-2 m-4 my-5">
+      <h3><i class="mdi mdi-content-cut mx-3"></i>Grooming</h3>
+      <div class="row">
+        <div class="col-12">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. A alias ipsa
+          tempore impedit, sed odio mollitia cumque eligendi placeat quia quas.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </div>
+      </div>
+    </div>
+
+    <div class="content-box p-2 m-4 my-5">
+      <h3><i class="mdi mdi-shower mx-3"></i>Bathing</h3>
+      <div class="color-splash mb-3 bg- w-50"></div>
+      <div class="row">
+        <div class="col-12">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. A alias ipsa
+          tempore impedit, sed odio mollitia cumque eligendi placeat quia quas.
+        </div>
+      </div>
+    </div>
+    <div class="content-box p-2 m-4 my-5">
+      <h3><i class="mdi mdi-hair-dryer mx-3"></i>More!</h3>
+      <div class="row">
+        <div class="col-12 px-3">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. A alias ipsa
+          tempore impedit, sed odio mollitia cumque eligendi placeat quia quas.
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  setup() {
+    return {};
+  },
+};
+</script>
+
+<style lang="scss" scoped></style>
