@@ -1,22 +1,151 @@
 <template>
-  <div class="row"></div>
+  <div class="col-12 d-flex justify-content-center mb-5 pt-5">
+    <div class="">
+      <h1 class="text-white">The Groomers</h1>
+      <div class="color-splash mb-3 bg-success w-75 mb-5 align-self-end"></div>
+    </div>
+  </div>
+
   <div class="col-12 loader">
-    <div class="row groomers-container" id="groomers">
-      <div class="col-3">
+    <!--Medium Sized Profiles-->
+    <div
+      class="row groomers-container d-none d-md-flex d-lg-none"
+      id="groomers"
+    >
+      <div class="col-12 justify-content-center d-flex">
+        <i class="mdi mdi-circle text-primary fs-3"></i>
+      </div>
+      <div class="col-md-12 d-flex bg-info">
         <div class="container-fluid">
           <div
             class="circle position-relative d-flex justify-content-center align-items-center"
           >
             <img
-              @click="changePage()"
+              @click="changePage('groomers')"
               src="src/assets/img/lizbitz.png"
-              class="pt-5 mt-3 groomer first-groomer img-fluid position-absolute btn"
+              class="pt-4 mt-5 groomer first-groomer img-fluid position-absolute"
+            />
+            <h3 class="groomer-text p-2">Liz Jensen</h3>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem
+            ipsum dolor sit, amet consectetur adipisicing elit.
+          </p>
+
+          <div class="btn d-flex">
+            <p>Details</p>
+            <i class="mdi mdi-chevron-right pt-1"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 justify-content-center d-flex">
+        <i class="mdi mdi-circle text-success fs-3"></i>
+      </div>
+      <div class="col-md-12 col-lg-3 d-flex">
+        <div class="container-fluid">
+          <div
+            class="shape position-relative d-flex bg-success justify-content-center align-items-center"
+          >
+            <img
+              src="src/assets/img/wowom-removebg-preview.png"
+              class="groomer first-groomer img-fluid position-absolute pt-5 mt-2"
+            />
+            <h3 class="groomer-text p-2">The Poof</h3>
+          </div>
+        </div>
+        <div
+          class="d-md-flex d-lg-none justify-content-center align-items-center"
+        >
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non
+            laboriosam cupiditate necessitatibus distinctio.
+          </p>
+          <div class="btn d-flex">
+            <p>Details</p>
+            <i class="mdi mdi-chevron-right pt-1"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 justify-content-center d-flex">
+        <i class="mdi mdi-circle text-warning fs-3"></i>
+      </div>
+
+      <div class="col-md-12 col-lg-3 d-flex bg-info">
+        <div class="container-fluid">
+          <div
+            class="shape-2 position-relative d-flex bg-warning justify-content-center align-items-center"
+          >
+            <img
+              src="src/assets/img/John_marston.webp"
+              class="groomer first-groomer img-fluid position-absolute pt-4 mt-2"
+            />
+            <h3 class="groomer-text p-2">John Marston</h3>
+          </div>
+        </div>
+        <div
+          class="d-md-flex d-lg-none justify-content-center align-items-center"
+        >
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non
+            laboriosam cupiditate necessitatibus distinctio.
+          </p>
+          <div class="btn d-flex">
+            <p>Details</p>
+            <i class="mdi mdi-chevron-right pt-1"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 justify-content-center d-flex">
+        <i class="mdi mdi-circle text-secondary fs-3"></i>
+      </div>
+      <div class="col-md-12 col-lg-3 d-flex bg-info">
+        <div class="container-fluid">
+          <div
+            class="shape-3 position-relative d-flex bg-secondary justify-content-center align-items-center"
+          >
+            <img
+              src="src/assets/img/152-1521917_bastion-bastion-overwatch-transparent (1).png"
+              class="groomer first-groomer img-fluid position-absolute pt-3"
+            />
+            <h3 class="groomer-text p-2">Bastion</h3>
+          </div>
+        </div>
+        <div
+          class="d-md-flex d-lg-none justify-content-center align-items-center"
+        >
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non
+            laboriosam cupiditate necessitatibus distinctio.
+          </p>
+          <div class="btn d-flex">
+            <p>Details</p>
+            <i class="mdi mdi-chevron-right pt-1"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--large profile SECTION-->
+
+    <div class="row groomers-container d-none d-lg-flex" id="groomers-large">
+      <div class="col-3 d-flex bg-info">
+        <div class="container-fluid">
+          <div
+            class="circle position-relative d-flex justify-content-center align-items-center"
+          >
+            <img
+              @click="changePage('groomers-large')"
+              src="src/assets/img/lizbitz.png"
+              class="pt-4 mt-5 groomer first-groomer img-fluid position-absolute"
             />
             <h3 class="groomer-text p-2">Liz Jensen</h3>
           </div>
         </div>
       </div>
-      <div class="col-3">
+
+      <div class="col-3 col-lg-3 d-flex">
         <div class="container-fluid">
           <div
             class="shape position-relative d-flex bg-success justify-content-center align-items-center"
@@ -29,7 +158,8 @@
           </div>
         </div>
       </div>
-      <div class="col-3">
+
+      <div class="col-3 col-lg-3 d-flex bg-info">
         <div class="container-fluid">
           <div
             class="shape-2 position-relative d-flex bg-warning justify-content-center align-items-center"
@@ -42,7 +172,8 @@
           </div>
         </div>
       </div>
-      <div class="col-3">
+
+      <div class="col-3 col-lg-3 d-flex bg-info">
         <div class="container-fluid">
           <div
             class="shape-3 position-relative d-flex bg-secondary justify-content-center align-items-center"
@@ -63,8 +194,9 @@
 export default {
   setup() {
     return {
-      changePage() {
-        let profile = document.getElementById("groomers");
+      changePage(el) {
+        let element = el.toString();
+        let profile = document.getElementById(element);
 
         let userProfile = `
   
@@ -74,11 +206,11 @@ export default {
             <div class="col-3">
               <img
                 src="src/assets/img/lizbitz.png"
-                class=" bg-primary w-75"
+                class=" bg-primary w-100"
               />
             </div>
             <div class="col-8">
-              <h3 class="groomer-text p-2">Liz Jensen</h3>
+              <h3 class="groomer-text text-dark p-2">Liz Jensen</h3>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non
                 laboriosam cupiditate necessitatibus distinctio. Adipisci
@@ -91,15 +223,11 @@ export default {
         </div>
       </div>
 
-      <div class="col-12 bg-black">
+      <div class="col-12">
         <div
-          class="row d-flex justify-content-end "
+          class="row d-flex  bg-white justify-content-end p-3 pb-4"
         >
-       
-
-          <div class="col-12 d-flex justify-content-end">
-
-          </div>
+             <div class=""><h2>My Grooms</h2></div>
           <div class="col-2 rounded">
             <img
               class="img-fluid pet-pics"
@@ -121,7 +249,7 @@ export default {
               alt=""
             />
           </div>
-          
+          </div>
         </div>
       </div>`;
         profile.innerHTML = userProfile;
@@ -147,6 +275,10 @@ export default {
   height: 100%;
 }
 
+.color-splash-hori {
+  width: 1em;
+  height: 100%;
+}
 .groomer-profile {
   animation: growFade 1000ms;
 }
