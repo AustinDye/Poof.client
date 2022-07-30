@@ -18,7 +18,7 @@
 
       <div ref="bottom" class="row bg-white p-5 my-5"><AboutSection /></div>
 
-      <div ref="groomers" class="row bg-info p-5 my-5">
+      <div ref="groomers" class="row bg-info">
         <GroomersSection />
       </div>
 

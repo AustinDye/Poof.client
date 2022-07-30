@@ -6,10 +6,10 @@
     </div>
   </div>
 
-  <div class="col-12 loader">
-    <!--Medium Sized Profiles-->
+  <div class="col-12 loader pb-3">
+    <!--Medium Sized Profiles SECTION -->
     <div
-      class="row groomers-container d-none d-md-flex d-lg-none"
+      class="row groomers-container d-none d-sm-flex d-md-flex d-lg-none"
       id="groomers"
     >
       <div class="col-12 justify-content-center d-flex">
@@ -187,6 +187,67 @@
         </div>
       </div>
     </div>
+    <!--small profile SECTION-->
+    <div class="row groomers-container d-flex d-sm-none" id="groomers-small">
+      <div class="col-12 d-flex">
+        <div class="container-fluid d-flex liz-wiz">
+          <div
+            class="circle-small d-flex justify-content-center align-items-center"
+          >
+            <img
+              @click="changePage('groomers')"
+              src="src/assets/img/lizbitz.png"
+              class="sm-groomer img-fluid"
+            />
+          </div>
+          <p class="fs-1">Liz Jensen</p>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="container-fluid d-flex liz-wiz">
+          <div
+            class="circle-small d-flex justify-content-center align-items-center"
+          >
+            <img
+              @click="changePage('groomers')"
+              src="src/assets/img/lizbitz.png"
+              class="sm-groomer img-fluid"
+            />
+          </div>
+          <p class="fs-1">Liz Jensen</p>
+        </div>
+      </div>
+      <div class="col-12 d-flex bg-info">
+        <div class="container-fluid d-flex liz-wiz">
+          <div
+            class="circle-small d-flex justify-content-center align-items-center"
+          >
+            <img
+              @click="changePage('groomers')"
+              src="src/assets/img/lizbitz.png"
+              class="sm-groomer img-fluid"
+            />
+          </div>
+          <p class="fs-1">Liz Jensen</p>
+        </div>
+      </div>
+
+      <div class="col-12 d-flex bg-info">
+        <div class="container-fluid d-flex liz-wiz">
+          <div
+            class="circle-small d-flex justify-content-center align-items-center"
+          >
+            <img
+              @click="changePage('groomers')"
+              src="src/assets/img/lizbitz.png"
+              class="sm-groomer img-fluid"
+            />
+          </div>
+          <p class="fs-1">Liz Jensen</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -267,12 +328,20 @@ export default {
   background: rgba(32, 32, 32, 0.591);
   color: white;
   position: absolute;
-  bottom: 0;
+  bottom: -0.3em;
   z-index: 100;
 }
 
 .loader {
   height: 100%;
+}
+
+.sm-groomer {
+  width: 100%;
+}
+
+.liz-wiz {
+  height: 20vh;
 }
 
 .color-splash-hori {
@@ -296,6 +365,15 @@ export default {
   width: 18em;
   background-color: rgb(187, 187, 255);
   border-radius: 50% 10%;
+}
+
+.circle-small {
+  height: 8em;
+  width: 8em;
+  margin-bottom: 2em;
+  background-color: rgba(187, 187, 255, 0.865);
+  border-radius: 100%;
+  border: 1em rgba($info, 1) solid;
 }
 
 .shape {
