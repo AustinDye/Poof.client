@@ -1,13 +1,12 @@
-import { ProxyState } from "../AppState.js"
 
 
 export class Groomer {
-    constructor({id, name,  img, description, color}){
-        this.id = id
-        this.name= name || ""
-        this.img = img || ""
-        this.description = description
-        this.color = color
+    constructor(data){
+        this.id = data.id
+        this.name= data.name || ""
+        this.img = data.img || ""
+        this.description = data.description || ""
+        this.color = data.color || ""
     }
 
 }
