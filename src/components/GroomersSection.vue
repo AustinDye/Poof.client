@@ -8,188 +8,17 @@
 
   <div class="col-12 loader pb-5">
     <!--Medium Sized Profiles SECTION -->
-    <div
-      class="row groomers-container d-none d-sm-flex d-md-flex d-lg-none"
-      id="groomers"
-    >
-      <div class="col-12 justify-content-center d-flex">
-        <i class="mdi mdi-circle text-primary fs-3"></i>
-      </div>
-      <div class="col-md-12 d-flex bg-info">
-        <div class="container-fluid">
-          <div
-            class="circle position-relative d-flex justify-content-center align-items-center"
-          >
-            <img
-              @click="changePage('groomers')"
-              src="src/assets/img/lizbitz.png"
-              class="pt-4 mt-5 groomer first-groomer img-fluid position-absolute"
-            />
-            <h3 class="groomer-text p-2">Liz Jensen</h3>
-          </div>
-        </div>
-        <div class="d-flex justify-content-center align-items-center">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem
-            ipsum dolor sit, amet consectetur adipisicing elit.
-          </p>
-
-          <div class="btn d-flex">
-            <p>Details</p>
-            <i class="mdi mdi-chevron-right pt-1"></i>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 justify-content-center d-flex">
-        <i class="mdi mdi-circle text-success fs-3"></i>
-      </div>
-      <div class="col-md-12 col-lg-3 d-flex">
-        <div class="container-fluid">
-          <div
-            class="shape position-relative d-flex bg-success justify-content-center align-items-center"
-          >
-            <img
-              src="src/assets/img/wowom-removebg-preview.png"
-              class="groomer first-groomer img-fluid position-absolute pt-5 mt-2"
-            />
-            <h3 class="groomer-text p-2">The Poof</h3>
-          </div>
-        </div>
-        <div
-          class="d-md-flex d-lg-none justify-content-center align-items-center"
-        >
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non
-            laboriosam cupiditate necessitatibus distinctio.
-          </p>
-          <div class="btn d-flex">
-            <p>Details</p>
-            <i class="mdi mdi-chevron-right pt-1"></i>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 justify-content-center d-flex">
-        <i class="mdi mdi-circle text-warning fs-3"></i>
-      </div>
-
-      <div class="col-md-12 col-lg-3 d-flex bg-info">
-        <div class="container-fluid">
-          <div
-            class="shape-2 position-relative d-flex bg-warning justify-content-center align-items-center"
-          >
-            <img
-              src="src/assets/img/John_marston.webp"
-              class="groomer first-groomer img-fluid position-absolute pt-4 mt-2"
-            />
-            <h3 class="groomer-text p-2">John Marston</h3>
-          </div>
-        </div>
-        <div
-          class="d-md-flex d-lg-none justify-content-center align-items-center"
-        >
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non
-            laboriosam cupiditate necessitatibus distinctio.
-          </p>
-          <div class="btn d-flex">
-            <p>Details</p>
-            <i class="mdi mdi-chevron-right pt-1"></i>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 justify-content-center d-flex">
-        <i class="mdi mdi-circle text-secondary fs-3"></i>
-      </div>
-      <div class="col-md-12 col-lg-3 d-flex bg-info">
-        <div class="container-fluid">
-          <div
-            class="shape-3 position-relative d-flex bg-secondary justify-content-center align-items-center"
-          >
-            <img
-              src="src/assets/img/152-1521917_bastion-bastion-overwatch-transparent (1).png"
-              class="groomer first-groomer img-fluid position-absolute pt-3"
-            />
-            <h3 class="groomer-text p-2">Bastion</h3>
-          </div>
-        </div>
-        <div
-          class="d-md-flex d-lg-none justify-content-center align-items-center"
-        >
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non
-            laboriosam cupiditate necessitatibus distinctio.
-          </p>
-          <div class="btn d-flex">
-            <p>Details</p>
-            <i class="mdi mdi-chevron-right pt-1"></i>
-          </div>
-        </div>
-      </div>
-    </div>
+    <MediumGroomers />
 
     <!--large profile SECTION-->
-
-    <!--small profile SECTION-->
-    <div class="row groomers-container d-flex d-sm-none" id="groomers-small">
-      <div class="col-12 d-flex">
-        <div class="container-fluid d-flex liz-wiz">
-          <div
-            class="circle-small d-flex justify-content-center align-items-center"
-          >
-            <img
-              @click="changePage('groomers')"
-              src="src/assets/img/lizbitz.png"
-              class="sm-groomer img-fluid"
-            />
-          </div>
-          <p class="fs-1">Liz Jensen</p>
-        </div>
-      </div>
-
-      <div class="col-12">
-        <div class="container-fluid d-flex liz-wiz">
-          <div
-            class="circle-small d-flex justify-content-center align-items-center"
-          >
-            <img
-              @click="changePage('groomers')"
-              src="src/assets/img/lizbitz.png"
-              class="sm-groomer img-fluid"
-            />
-          </div>
-          <p class="fs-1">Liz Jensen</p>
-        </div>
-      </div>
-      <div class="col-12 d-flex bg-info">
-        <div class="container-fluid d-flex liz-wiz">
-          <div
-            class="circle-small d-flex justify-content-center align-items-center"
-          >
-            <img
-              @click="changePage('groomers')"
-              src="src/assets/img/lizbitz.png"
-              class="sm-groomer img-fluid"
-            />
-          </div>
-          <p class="fs-1">Liz Jensen</p>
-        </div>
-      </div>
-
-      <div class="col-12 d-flex bg-info">
-        <div class="container-fluid d-flex liz-wiz">
-          <div
-            class="circle-small d-flex justify-content-center align-items-center"
-          >
-            <img
-              @click="changePage('groomers')"
-              src="src/assets/img/lizbitz.png"
-              class="sm-groomer img-fluid"
-            />
-          </div>
-          <p class="fs-1">Liz Jensen</p>
-        </div>
+    <div class="row m-2 p-2">
+      <div class="col-3" v-for="groomer in groomers" :key="groomer.id">
+        <GroomIcons :groomer="groomer" :key="groomer.id"> </GroomIcons>
       </div>
     </div>
+
+    <!--small profile SECTION-->
+    <SmallGroomers />
   </div>
 </template>
 
@@ -198,6 +27,7 @@ import { computed } from "vue";
 import { AppState } from "../AppState";
 import { data } from "../data";
 import GroomIcons from "./GroomIcons.vue";
+import MediumGroomers from "./MediumGroomers.vue";
 
 export default {
   setup() {
@@ -265,6 +95,7 @@ export default {
       },
     };
   },
+  components: { MediumGroomers, GroomIcons },
 };
 </script>
 

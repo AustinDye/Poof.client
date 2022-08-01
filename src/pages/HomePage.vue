@@ -6,22 +6,28 @@
     <div class="container-fluid">
       <!--TOP SECTION-->
 
-      <div class="row grad mx-5 top-area anchor" ref="top"><HomeSection /></div>
+      <div class="row grad mx-5 top-area anchor" ref="top">
+        <HomeSection />
+      </div>
 
-      <!--MID SECTION-->
+      <!--SERVICES SECTION-->
 
       <div id="midarea" class="row bg-info p-4" ref="middle">
         <ServicesSection />
       </div>
 
-      <!--BOTTOM SECTION-->
+      <!--ABOUT SECTION-->
 
-      <div ref="bottom" class="row bg-white p-5 my-5"><AboutSection /></div>
+      <div ref="bottom" class="row bg-white p-5 my-5">
+        <AboutSection />
+      </div>
 
+      <!--GROOMERS SECTION-->
       <div ref="groomers" class="row bg-info">
         <GroomersSection />
       </div>
 
+      <!--GALLERY SECTION-->
       <div
         class="row bg-info this-place d-flex justify-content-end px-5"
         ref="gallery"
@@ -33,7 +39,8 @@
       <div class="row py-5 p-2" ref="wayBottom">
         <LocationSection />
       </div>
-      <div class="row" id="other"><h1>hello</h1></div>
+
+      <!--Footer SECTION-->
     </div>
     <Footer @scroll="scrollToElement" />
   </main>
