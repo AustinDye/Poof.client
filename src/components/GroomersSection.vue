@@ -1,5 +1,5 @@
 <template>
-  <div class="col-12 d-flex justify-content-center mb-5 pt-5">
+  <div class="col-12 d-flex justify-content-center mb-5 pt-5" v-scrollanimation>
     <div class="">
       <h1 class="text-white">The Groomers</h1>
       <div class="color-splash mb-3 bg-success w-75 mb-5 align-self-end"></div>
@@ -129,55 +129,6 @@
 
     <!--large profile SECTION-->
 
-    <div
-      class="row groomers-container d-none d-lg-flex"
-      id="groomers-large"
-      v-for="groomer in groomers"
-      :key="groomer.id"
-    >
-      <GroomIcons />
-      <!--<div class="col-3 col-lg-3 d-flex">
-        <div class="container-fluid">
-          <div
-            class="shape position-relative d-flex bg-success justify-content-center align-items-center"
-          >
-            <img
-              src="src/assets/img/wowom-removebg-preview.png"
-              class="groomer first-groomer img-fluid position-absolute pt-5 mt-2"
-            />
-            <h3 class="groomer-text p-2">{{ groomers[1].name }}</h3>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-3 col-lg-3 d-flex bg-info">
-        <div class="container-fluid">
-          <div
-            class="shape-2 position-relative d-flex bg-warning justify-content-center align-items-center"
-          >
-            <img
-              src="src/assets/img/John_marston.webp"
-              class="groomer first-groomer img-fluid position-absolute pt-4 mt-2"
-            />
-            <h3 class="groomer-text p-2">John Marston</h3>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-3 col-lg-3 d-flex bg-info">
-        <div class="container-fluid">
-          <div
-            class="shape-3 position-relative d-flex bg-secondary justify-content-center align-items-center"
-          >
-            <img
-              src="src/assets/img/152-1521917_bastion-bastion-overwatch-transparent (1).png"
-              class="groomer first-groomer img-fluid position-absolute pt-3"
-            />
-            <h3 class="groomer-text p-2">Bastion</h3>
-          </div>
-        </div>
-      </div>-->
-    </div>
     <!--small profile SECTION-->
     <div class="row groomers-container d-flex d-sm-none" id="groomers-small">
       <div class="col-12 d-flex">
@@ -314,12 +265,22 @@ export default {
       },
     };
   },
-  components: { GroomIcons },
 };
 </script>
 
 <style lang="scss" scoped>
 @import "src/assets/scss/_variables.scss";
+
+.before-enter {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 2s ease-out;
+}
+
+.enter {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 .groomer-text {
   background: rgba(32, 32, 32, 0.591);
@@ -345,18 +306,7 @@ export default {
   width: 1em;
   height: 100%;
 }
-.groomer-profile {
-  animation: growFade 1000ms;
-}
-@keyframes growFade {
-  0% {
-    opacity: 0;
-  }
 
-  100% {
-    opacity: 100;
-  }
-}
 .circle {
   height: 18em;
   width: 18em;
