@@ -6,7 +6,7 @@
     </div>
   </div>
 
-  <div class="col-12 loader pb-3">
+  <div class="col-12 loader pb-5">
     <!--Medium Sized Profiles SECTION -->
     <div
       class="row groomers-container d-none d-sm-flex d-md-flex d-lg-none"
@@ -129,23 +129,14 @@
 
     <!--large profile SECTION-->
 
-    <div class="row groomers-container d-none d-lg-flex" id="groomers-large">
-      <div class="col-3 d-flex bg-info">
-        <div class="container-fluid">
-          <div
-            class="circle position-relative d-flex justify-content-center align-items-center"
-          >
-            <img
-              @click="changePage('groomers-large')"
-              src="src/assets/img/lizbitz.png"
-              class="pt-4 mt-5 groomer first-groomer img-fluid position-absolute"
-            />
-            <h3 class="groomer-text p-2">Liz Jensen</h3>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-3 col-lg-3 d-flex">
+    <div
+      class="row groomers-container d-none d-lg-flex"
+      id="groomers-large"
+      v-for="groomer in groomers"
+      :key="groomer.id"
+    >
+      <GroomIcons />
+      <!--<div class="col-3 col-lg-3 d-flex">
         <div class="container-fluid">
           <div
             class="shape position-relative d-flex bg-success justify-content-center align-items-center"
@@ -154,7 +145,7 @@
               src="src/assets/img/wowom-removebg-preview.png"
               class="groomer first-groomer img-fluid position-absolute pt-5 mt-2"
             />
-            <h3 class="groomer-text p-2">The Poof</h3>
+            <h3 class="groomer-text p-2">{{ groomers[1].name }}</h3>
           </div>
         </div>
       </div>
@@ -185,7 +176,7 @@
             <h3 class="groomer-text p-2">Bastion</h3>
           </div>
         </div>
-      </div>
+      </div>-->
     </div>
     <!--small profile SECTION-->
     <div class="row groomers-container d-flex d-sm-none" id="groomers-small">
@@ -252,72 +243,78 @@
 </template>
 
 <script>
+import { computed } from "vue";
+import { AppState } from "../AppState";
+import { data } from "../data";
+import GroomIcons from "./GroomIcons.vue";
+
 export default {
   setup() {
     return {
+      groomers: computed(() => AppState.groomers),
       changePage(el) {
         let element = el.toString();
         let profile = document.getElementById(element);
-
         let userProfile = `
-  
-       <div class="col-12 d-flex bg-primary">
-        <div class="container-fluid">
-          <div class="row groomer-profile">
-            <div class="col-3">
-              <img
-                src="src/assets/img/lizbitz.png"
-                class=" bg-primary w-100"
-              />
-            </div>
-            <div class="col-8">
-              <h3 class="groomer-text text-dark p-2">Liz Jensen</h3>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non
-                laboriosam cupiditate necessitatibus distinctio. Adipisci
-                doloribus obcaecati voluptate, error a consequatur magnam, nemo
-                aliquam perferendis quos voluptatem laborum! Sit, repellendus
-                modi.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-12">
+        <div class="row bg-white text-dark">
+      <div
+        class="col-6 d-flex flex-column justify-content-center align-items-center"
+      >
+        <div class="d-flex">
+          <img
+            @click="changePage('groomers')"
+            src="src/assets/img/lizbitz.png"
+            class="pt-4 mt-5 groomer-p"
+          />
+        </div>
+        <h4 class="text-dark fs-2">Liz Jensen</h4>
+        <div class="border w-25 border-danger"></div>
+        <p class="fs-5">Dog Groomer</p>
+        <p class="p-5 mx-5 text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+          consequuntur provident est necessitatibus, nulla sapiente, quod
+          quidem.
+        </p>
+        <div class="border w-100 border-primary"></div>
+      </div>
+      <div class="col-6 justify-content-center d-flex align-items-end">
         <div
-          class="row d-flex  bg-white justify-content-end p-3 pb-4"
+          class="angle position-absolute d-flex justify-content-center align-items-center"
+        ></div>
+        <div
+          class="row d-flex position-relative justify-content-center align-item-center"
         >
-             <div class=""><h2>My Grooms</h2></div>
-          <div class="col-2 rounded">
+          <div class="col-3 profile-grooms">
             <img
-              class="img-fluid pet-pics"
-              src="https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/283516196_344714747793835_2385254879953852717_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=KiQDXz5Dv0sAX8y-Vd7&_nc_ht=scontent-sea1-1.xx&oh=00_AT95209dwNDznhuoY1bDlkerP8GSkqmV44xlw_J8cubixA&oe=62E460DF"
-              alt=""
-            />
-          </div>
-          <div class="col-2">
-            <img
-              class="img-fluid pet-pics"
+              class="pet-pic"
               src="https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/273648312_274104028188241_5668297739781079396_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=WYhvOdCf6n4AX8lVot0&_nc_ht=scontent-sea1-1.xx&oh=00_AT_FOkT41fmPEYrd_l7gHJvfG_WHYwne-gk4r8ivkmYqHA&oe=62E570F1"
               alt=""
             />
           </div>
-          <div class="col-2">
+          <div class="col-3 profile-grooms">
             <img
-              class="img-fluid pet-pics"
-              src="https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/274506110_285661043699206_3788085950883516724_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=pVJK1PGMGaMAX-qb3ub&_nc_ht=scontent-sea1-1.xx&oh=00_AT8ZsnrJo_GDZro1btDMWTmTzMBL2-IbEeUZc4O7kvC7fg&oe=62E4E93F"
+              class="pet-pic"
+              src="https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/273648312_274104028188241_5668297739781079396_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=WYhvOdCf6n4AX8lVot0&_nc_ht=scontent-sea1-1.xx&oh=00_AT_FOkT41fmPEYrd_l7gHJvfG_WHYwne-gk4r8ivkmYqHA&oe=62E570F1"
               alt=""
             />
           </div>
+          <div class="col-3 profile-grooms">
+            <img
+              class="pet-pic"
+              src="https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/273648312_274104028188241_5668297739781079396_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=WYhvOdCf6n4AX8lVot0&_nc_ht=scontent-sea1-1.xx&oh=00_AT_FOkT41fmPEYrd_l7gHJvfG_WHYwne-gk4r8ivkmYqHA&oe=62E570F1"
+              alt=""
+            />
           </div>
         </div>
-      </div>`;
+      </div>
+    </div>`;
         profile.innerHTML = userProfile;
         return profile;
       },
     };
   },
+  components: { GroomIcons },
 };
 </script>
 
@@ -380,7 +377,7 @@ export default {
   height: 18em;
   width: 18em;
 
-  border-radius: 40% 20% 80% 10%;
+  border-radius: 20% 20% 80% 10%;
 }
 
 .shape-2 {
@@ -395,5 +392,26 @@ export default {
   width: 18em;
 
   border-radius: 80% 50% 80% 100%;
+}
+
+.groomer-p {
+  height: 14em;
+  width: 14em;
+  background-color: rgb(187, 187, 255);
+  border-radius: 100%;
+}
+.profile-grooms {
+  padding: 1em;
+}
+.pet-pic {
+  border-radius: 1em;
+}
+
+.angle {
+  background-color: rgba($success, 1);
+
+  height: 15em;
+  width: 100em;
+  border-radius: 100% 0% 0% 0%;
 }
 </style>
