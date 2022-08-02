@@ -19,7 +19,6 @@
           consequuntur provident est necessitatibus, nulla sapiente, quod
           quidem.
         </p>
-        <div class="border w-50 border-primary"></div>
       </div>
       <div class="col-6 justify-content-center d-flex align-items-end">
         <div
@@ -28,27 +27,9 @@
         <div
           class="row d-flex position-relative justify-content-center align-item-center"
         >
-          <div class="col-3 profile-grooms">
-            <img
-              class="pet-pic"
-              src="https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/273648312_274104028188241_5668297739781079396_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=WYhvOdCf6n4AX8lVot0&_nc_ht=scontent-sea1-1.xx&oh=00_AT_FOkT41fmPEYrd_l7gHJvfG_WHYwne-gk4r8ivkmYqHA&oe=62E570F1"
-              alt=""
-            />
-          </div>
-          <div class="col-3 profile-grooms">
-            <img
-              class="pet-pic"
-              src="https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/273648312_274104028188241_5668297739781079396_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=WYhvOdCf6n4AX8lVot0&_nc_ht=scontent-sea1-1.xx&oh=00_AT_FOkT41fmPEYrd_l7gHJvfG_WHYwne-gk4r8ivkmYqHA&oe=62E570F1"
-              alt=""
-            />
-          </div>
-          <div class="col-3 profile-grooms">
-            <img
-              class="pet-pic"
-              src="https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/273648312_274104028188241_5668297739781079396_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=WYhvOdCf6n4AX8lVot0&_nc_ht=scontent-sea1-1.xx&oh=00_AT_FOkT41fmPEYrd_l7gHJvfG_WHYwne-gk4r8ivkmYqHA&oe=62E570F1"
-              alt=""
-            />
-          </div>
+          <div class="col-3 profile-grooms"></div>
+          <div class="col-3 profile-grooms"></div>
+          <div class="col-3 profile-grooms"></div>
         </div>
       </div>
     </div>

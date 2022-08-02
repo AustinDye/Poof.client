@@ -12,14 +12,14 @@ export const data = {
 {
  id: 2,
  name: "The Poof",
- color: "#00000",
+ color: "#34342",
  description: "hi im lizard",
  img:"src/assets/img/wowom-removebg-preview.png"
  },
 {
  id: 3,
  name: "John Marston",
- color: "#55555",
+ color: "#34342",
  description: "hi im lizard",
  img:"src/assets/img/John_marston.webp"
 },

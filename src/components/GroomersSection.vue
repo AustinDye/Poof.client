@@ -6,19 +6,16 @@
     </div>
   </div>
 
-  <div class="col-12 loader pb-5">
-    <!--Medium Sized Profiles SECTION -->
-    <MediumGroomers />
-
-    <!--large profile SECTION-->
-    <div class="row m-2 p-2">
-      <div class="col-3" v-for="groomer in groomers" :key="groomer.id">
+  <div class="col-12 loader pb-5" id="loader">
+    <div class="row d-block d-md-flex p-2">
+      <div
+        class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center my-4"
+        v-for="groomer in groomers"
+        :key="groomer.id"
+      >
         <GroomIcons :groomer="groomer" :key="groomer.id"> </GroomIcons>
       </div>
     </div>
-
-    <!--small profile SECTION-->
-    <SmallGroomers />
   </div>
 </template>
 
@@ -36,6 +33,7 @@ export default {
       changePage(el) {
         let element = el.toString();
         let profile = document.getElementById(element);
+
         let userProfile = `
 
         <div class="row bg-white text-dark">
@@ -136,13 +134,6 @@ export default {
 .color-splash-hori {
   width: 1em;
   height: 100%;
-}
-
-.circle {
-  height: 18em;
-  width: 18em;
-  background-color: rgb(187, 187, 255);
-  border-radius: 50% 10%;
 }
 
 .circle-small {

@@ -19,17 +19,6 @@
           <h3 class="groomer-text p-2">Liz Jensen</h3>
         </div>
       </div>
-      <div class="d-flex justify-content-center align-items-center">
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum
-          dolor sit, amet consectetur adipisicing elit.
-        </p>
-
-        <div class="btn d-flex">
-          <p>Details</p>
-          <i class="mdi mdi-chevron-right pt-1"></i>
-        </div>
-      </div>
     </div>
     <div class="col-12 justify-content-center d-flex">
       <i class="mdi mdi-circle text-success fs-3"></i>

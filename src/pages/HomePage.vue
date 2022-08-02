@@ -32,7 +32,7 @@
         class="row bg-info this-place d-flex justify-content-end px-5"
         ref="gallery"
       >
-        <GallerySection />
+        <BotiqueSection />
       </div>
 
       <!--wayBottom SECTION-->
