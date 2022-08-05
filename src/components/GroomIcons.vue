@@ -2,7 +2,7 @@
   <div class="groom-circle" :style="`--bg-color: ${groomer.color}`">
     <h3 class="fade-text">{{ groomer.name }}</h3>
     <img :src="groomer.img" class="groomer-p" />
-    <h3 class="groomer-text">{{ groomer.name }}</h3>
+    <p class="groomer-text">{{ groomer.name }}</p>
     <div class="swirly"></div>
     <div class="profile-button btn">
       <h4>About</h4>
@@ -35,11 +35,6 @@ export default {
   position: absolute;
   font-size: 3em;
   transition: 500ms;
-
-  &:hover {
-    animation: colorHover 2s;
-    animation-iteration-count: infinite;
-  }
 }
 
 h4 {
@@ -49,8 +44,8 @@ h4 {
   border-radius: 100%;
   transition: 400ms;
   position: absolute;
-  width: 18em;
-  height: 18em;
+  width: 15em;
+  height: 15em;
   background: rgba(208, 67, 255, 0);
   border-right: 0em rgb(255, 255, 255) solid;
   border-radius: 100%;
@@ -58,8 +53,9 @@ h4 {
 .profile-button {
   position: absolute;
   display: flex;
-  opacity: 0;
-  bottom: 5em;
+  opacity: 1;
+  color: rgba(174, 174, 174, 0.203);
+  bottom: 5.5em;
   right: 0.2em;
   transition: 200ms;
   font-size: 1.75em;
@@ -68,8 +64,8 @@ h4 {
 .groom-circle {
   --bg-color: rgba(0, 0, 255, 0.145);
   margin-top: 4em;
-  height: 18em;
-  width: 18em;
+  height: 15em;
+  width: 15em;
   background: var(--bg-color);
   border-radius: 50%;
   transition: 400ms;
@@ -79,11 +75,11 @@ h4 {
   &:hover {
     & > .swirly {
       position: absolute;
-      width: 18em;
-      height: 18em;
+      width: 15em;
+      height: 15em;
       background: rgba(208, 67, 255, 0);
       border-right: 6em rgb(255, 255, 255) solid;
-      transition-delay: 400ms;
+      transition-delay: 200ms;
     }
     & > .groomer-text {
       left: 17em;
@@ -95,6 +91,8 @@ h4 {
     & > .profile-button {
       opacity: 100;
       transition-delay: 500ms;
+      animation: colorHover 2s;
+      animation-iteration-count: infinite;
     }
 
     & > .fade-text {
@@ -111,20 +109,20 @@ h4 {
 .groomer-p {
   padding-top: 1em;
   position: absolute;
-  height: 18em;
-  width: 18em;
+  height: 15em;
+  width: 15em;
   border-radius: 50% 10%;
   border-bottom: 3.5em rgb(255, 255, 255) solid;
-  transition: 400ms;
+  transition: 500ms;
 }
 
 .groomer-text {
-  font-size: 1.7em;
+  font-size: 1.5em;
   border-radius: 2%;
   color: black;
   position: absolute;
   left: 2%;
-  top: 9em;
+  top: 8em;
   bottom: 0.25em;
   z-index: 100;
   transition: 300ms;
@@ -154,24 +152,6 @@ h4 {
   100% {
     color: rgba($success, 0.8);
     text-shadow: 5px 0px 0px rgba($info, 0.8);
-  }
-}
-
-@keyframes swirl {
-  0% {
-    border-left: 0em rgba(255, 255, 255, 0.523) solid;
-    border-radius: 100%;
-    border-bottom: 0em rgba(255, 255, 255, 0.523) solid;
-    border-top: 0em rgba(255, 255, 255, 0.523) solid;
-    border-right: 0em rgb(255, 255, 255) solid;
-  }
-
-  100% {
-    border-left: 0em rgb(255, 255, 255) solid;
-    border-radius: 100%;
-    border-bottom: 0em rgb(255, 255, 255) solid;
-    border-top: 0em rgb(255, 255, 255) solid;
-    border-right: 6em rgb(255, 255, 255) solid;
   }
 }
 </style>
