@@ -1,6 +1,6 @@
 <template>
   <div class="col-12 position-absolute">
-    <Reviews />
+    <ReviewsSwiper />
   </div>
   <div class="spacer"></div>
   <div class="col-md-5 pt-5">
