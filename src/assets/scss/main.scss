@@ -15,6 +15,7 @@
 main {
   flex-grow: 1;
   background-color: white;
+  overflow: hidden;
 }
 
 a {
@@ -96,10 +97,6 @@ b {
 }
 .mid-area {
   z-index: 100;
-}
-
-.this-place {
-  background-image: url("https://www.smoochyapooch.com.au/uploads/1/0/2/1/102124530/panorama_orig.jpeg");
 }
 
 .gallery-holder {

@@ -15,12 +15,15 @@
       <div id="midarea" class="row bg-info p-4" ref="middle">
         <ServicesSection />
       </div>
+      <div class="row d-flex pb-5 mb-5" ref="gallery">
+        <BotiqueSection />
+      </div>
 
       <!--ABOUT SECTION-->
 
-      <div ref="bottom" class="row bg-white p-5 my-5">
+      <!--<div ref="bottom" class="row bg-white p-5 my-5">
         <AboutSection />
-      </div>
+      </div>-->
 
       <!--GROOMERS SECTION-->
       <div ref="groomers" class="row bg-info">
@@ -28,12 +31,6 @@
       </div>
 
       <!--GALLERY SECTION-->
-      <div
-        class="row bg-info this-place d-flex justify-content-end px-5"
-        ref="gallery"
-      >
-        <BotiqueSection />
-      </div>
 
       <!--wayBottom SECTION-->
       <div class="row py-5 p-2" ref="wayBottom">

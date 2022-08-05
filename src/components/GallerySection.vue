@@ -5,9 +5,7 @@
     >
       <h3 class="text-end fs-1">Gallery</h3>
       <div class="color-splash mb-3 bg-primary w-75"></div>
-      <div class="col-12 d-flex justify-content-end">
-        <div></div>
-      </div>
+      <div class="col-12 d-flex justify-content-end"></div>
       <div class="col-2 rounded">
         <img
           class="img-fluid pet-pics"
