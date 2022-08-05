@@ -77,7 +77,7 @@ export default {
 }
 
 .text-holder {
-  padding-top: ;
+  padding-top: 5em;
 }
 .loader {
   height: 100%;
