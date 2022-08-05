@@ -1,15 +1,15 @@
 <template>
-  <div class="col-md-5 mt-5">
-    <div class="rounded-circle bg-white">
+  <div class="col-md-5 d-flex justify-content-center">
+    <div class="popout-circle bg-white">
       <img
-        class=""
+        class="popout-image"
         src="https://jankrepl.github.io/assets/images/symbolic_regression/main_files/cute-dog-transparent-background.png"
         alt=""
       />
     </div>
   </div>
-  <div class="col-md-7 my-5 about-service">
-    <div class="p-3">
+  <div class="col-md-7 about-service">
+    <div class="">
       <h1 class="text-white">What We Do</h1>
       <div class="color-splash mb-3 bg-success w-50"></div>
       <p>
@@ -60,6 +60,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.popout-image {
+  height: 32em;
+  width: 32em;
+  z-index: 1;
+  position: absolute;
+}
+.popout-circle {
+  margin-top: 5em;
+  position: relative;
+  height: 32em;
+  width: 32em;
+  z-index: 0;
+  border-radius: 100%;
+}
 .before-enter {
   opacity: 0;
   transform: translateY(100px);

@@ -15,6 +15,9 @@
       <div id="midarea" class="row bg-info p-4" ref="middle">
         <ServicesSection />
       </div>
+      <div class="row d-flex pb-5 mb-5" ref="gallery">
+        <BotiqueSection />
+      </div>
 
       <!--ABOUT SECTION-->
 
@@ -28,9 +31,6 @@
       </div>
 
       <!--GALLERY SECTION-->
-      <div class="row d-flex" ref="gallery">
-        <BotiqueSection />
-      </div>
 
       <!--wayBottom SECTION-->
       <div class="row py-5 p-2" ref="wayBottom">

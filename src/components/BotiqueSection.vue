@@ -1,5 +1,5 @@
 <template>
-  <div class="col-md-4 p-5">
+  <div class="col-md-4 ps-5 pt-4">
     <h1>The Boutique</h1>
     <div class="color-splash mb-3 bg-warning w-50"></div>
     <p>
@@ -58,16 +58,12 @@ export default {
 <style lang="scss" scoped>
 @import "src/assets/scss/_variables.scss";
 
-.circle-holder {
-}
-.circle-holder-2 {
-}
 .circle,
 .circle-2 {
   z-index: 0;
   position: absolute;
-  height: 20em;
-  width: 20em;
+  height: 15em;
+  width: 15em;
   border-radius: 100%;
 }
 .circle {
@@ -88,7 +84,7 @@ export default {
 }
 
 .flower {
-  margin-top: 15em;
+  margin-top: 12em;
   position: relative;
 }
 
@@ -101,13 +97,13 @@ export default {
 .small-image {
   z-index: 2;
   margin-top: 2em;
-  width: 22em;
+  width: 15em;
 }
 .small-image-2 {
   z-index: 2;
-  padding-top: 5em;
+  padding-top: 3em;
   padding-right: 1em;
-  width: 23em;
+  width: 18em;
 }
 
 .petal-1,
@@ -147,7 +143,7 @@ export default {
     display: none;
   }
   .flower {
-    margin-top: 14em;
+    margin-top: 7em;
     background-color: rgba($info, 0.4);
     border-radius: 100%;
     margin-bottom: 5em;
@@ -162,7 +158,7 @@ export default {
     margin-top: 7em;
   }
   .flower {
-    left: 8em;
+    left: 10em;
   }
 }
 

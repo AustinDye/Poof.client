@@ -1,12 +1,12 @@
 <template>
-  <div class="col-6 d-flex justify-content-center mt-5" v-scrollanimation>
+  <div class="col-md-6 d-flex justify-content-center mt-5" v-scrollanimation>
     <div class="text-holder">
       <h1 class="text-white">Who We Are</h1>
       <div class="color-splash bg-success w-75 align-self-end"></div>
     </div>
   </div>
   <div
-    class="col-6 d-flex justify-content-center"
+    class="col-md-6 d-flex justify-content-center"
     v-for="owner in owners"
     :key="owner.id"
   >
