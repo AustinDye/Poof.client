@@ -28,10 +28,7 @@
       </div>
 
       <!--GALLERY SECTION-->
-      <div
-        class="row bg-info this-place d-flex justify-content-end px-5"
-        ref="gallery"
-      >
+      <div class="row d-flex" ref="gallery">
         <BotiqueSection />
       </div>
 

@@ -29,10 +29,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "src/assets/scss/_variables.scss";
+
 .mdi-chevron-right {
   position: absolute;
   font-size: 3em;
-  color: blue;
+  transition: 500ms;
+
+  &:hover {
+    animation: colorHover 2s;
+    animation-iteration-count: infinite;
+  }
+}
+
+h4 {
+  opacity: 0;
 }
 .swirly {
   border-radius: 100%;
@@ -127,6 +138,21 @@ export default {
   text-align: center;
   border-radius: 10%;
   transition: 400ms;
+}
+@keyframes colorHover {
+  0% {
+    color: rgba($success, 0.8);
+    text-shadow: 5px 0px 0px rgba($info, 0.8);
+  }
+  50% {
+    color: rgba($info, 0.8);
+    text-shadow: 5px 0px 0px rgba($success, 0.8);
+  }
+
+  100% {
+    color: rgba($success, 0.8);
+    text-shadow: 5px 0px 0px rgba($info, 0.8);
+  }
 }
 
 @keyframes swirl {
