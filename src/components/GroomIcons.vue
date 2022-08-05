@@ -1,5 +1,5 @@
 <template>
-  <div class="circle" style="background: {{groomer.color}}">
+  <div class="groom-circle" :style="`--bg-color: ${groomer.color}`">
     <h3 class="fade-text">{{ groomer.name }}</h3>
     <img :src="groomer.img" class="groomer-p" />
     <h3 class="groomer-text">{{ groomer.name }}</h3>
@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import { computed } from "vue";
+import { computed, onMounted } from "vue";
 import { AppState } from "../AppState";
 
 export default {
@@ -64,11 +64,13 @@ h4 {
   transition: 200ms;
   font-size: 1.75em;
 }
-.circle {
+
+.groom-circle {
+  --bg-color: rgba(0, 0, 255, 0.145);
   margin-top: 4em;
   height: 18em;
   width: 18em;
-  background: rgba(114, 159, 255, 0.865);
+  background: var(--bg-color);
   border-radius: 50%;
   transition: 400ms;
   position: relative;

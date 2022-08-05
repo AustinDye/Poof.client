@@ -8,6 +8,9 @@ export const AppState = reactive({
   account: {},
   groomers: data.groomers.map((g) => {
     return new Groomer(g)
+  }),
+  owners: data.owners.map((o) => {
+    return new Groomer(o)
   })
   
 })

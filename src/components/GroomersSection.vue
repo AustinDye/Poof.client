@@ -7,7 +7,15 @@
   </div>
 
   <div class="col-12 loader pb-5" id="loader">
-    <div class="row d-block d-md-flex p-2">
+    <div class="row d-block d-md-flex p-2 flex-row-reverse groom-row">
+      <div
+        class="col-12 d-flex justify-content-center my-4"
+        v-for="owner in owners"
+        :key="owner.id"
+      >
+        <GroomIcons :groomer="owner" :key="owner.id"> </GroomIcons>
+      </div>
+
       <div
         class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center my-4"
         v-for="groomer in groomers"
@@ -30,6 +38,7 @@ export default {
   setup() {
     return {
       groomers: computed(() => AppState.groomers),
+      owners: computed(() => AppState.owners),
       changePage(el) {
         let element = el.toString();
         let profile = document.getElementById(element);
@@ -185,5 +194,8 @@ export default {
   height: 15em;
   width: 100em;
   border-radius: 100% 0% 0% 0%;
+}
+
+.groom-row {
 }
 </style>
