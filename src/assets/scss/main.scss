@@ -72,12 +72,6 @@ img {
   opacity: 0;
 }
 
-h1 {
-  font-family: "Inter", sans-serif;
-  font-size: 4em;
-  color: rgb(39, 39, 39);
-  font-weight: bold;
-}
 h2 {
   font-family: "Inter", sans-serif;
   font-size: 3em;
@@ -86,10 +80,24 @@ h2 {
 }
 
 h3 {
-  font-family: "Inter", sans-serif;
+  font-family: "DimboItalic", sans-serif;
   font-size: 2em;
   color: #ffffff;
   font-weight: bold;
+}
+@font-face {
+  font-family: "Dimbo";
+  src: url("../assets/fonts/Dimbo_Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DimboItalic";
+  src: url("src/assets/fonts/Dimbo Italic.ttf") format("truetype");
+}
+
+h1 {
+  font-family: "Dimbo", sans-serif;
+  font-size: 8em;
+  color: rgb(39, 39, 39);
 }
 
 b {
