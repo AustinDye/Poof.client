@@ -23,7 +23,6 @@ const routes = [
       {
         name: 'details',
         path: '/groomers/:id',
-        props: true,
         component: loadComponent('AboutSection'),
       }
     ]
