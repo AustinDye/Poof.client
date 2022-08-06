@@ -1,8 +1,11 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import { authGuard } from '@bcwdev/auth0provider-client'
-import  scratch  from './components/scratch.vue'
+import scratch from './components/scratch.vue'
 function loadPage(page) {
   return () => import(`./pages/${page}.vue`)
+}
+function loadComponent(component) {
+  return () => import(`./components/${component}.vue`)
 }
 
 const routes = [
@@ -11,12 +14,19 @@ const routes = [
     path: '/home',
     name: 'Home',
     component: loadPage('HomePage'),
-    children: [{
-      path: 'groomer',
-      component: scratch,
-      props: true,
-      meta: {show: true}
-    }]
+    children: [
+      {
+        name: 'groomers',
+        path: '',
+        component: loadComponent('GroomersSection'),
+      },
+      {
+        name: 'details',
+        path: '/groomers/:id',
+        props: true,
+        component: loadComponent('AboutSection'),
+      }
+    ]
   },
   {
     path: '/about',

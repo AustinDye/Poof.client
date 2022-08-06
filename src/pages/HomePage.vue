@@ -22,7 +22,7 @@
       >
         <BotiqueSection />
       </div>
-      <router-view />
+      <!-- <router-view /> -->
 
       <!--ABOUT SECTION-->
 
@@ -31,9 +31,9 @@
       </div>-->
 
       <!--GROOMERS SECTION-->
-      <div ref="groomers" class="row bg-info">
-        <GroomersSection />
-      </div>
+      <a ref="groomers">
+        <router-view />
+      </a>
 
       <!--GALLERY SECTION-->
 
@@ -56,6 +56,9 @@ import AboutPage from "./AboutPage.vue";
 import AboutSection from "../components/AboutSection.vue";
 import GallerySection from "../components/GallerySection.vue";
 import ServicesSection from "../components/ServicesSection.vue";
+import { useRoute } from "vue-router";
+import { ref } from "@vue/reactivity";
+import { watchEffect } from "@vue/runtime-core";
 export default {
   name: "Home",
   methods: {
@@ -76,6 +79,15 @@ export default {
     AboutSection,
     GallerySection,
     ServicesSection,
+  },
+  setup() {
+    const route = useRoute();
+    const showDetails = ref(false);
+    watchEffect(() => {
+      if (route.name == "details") {
+        showDetails.value = true;
+      }
+    });
   },
 };
 </script>

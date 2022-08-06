@@ -6,7 +6,7 @@
     <div class="swirly"></div>
     <div class="profile-button btn">
       <h4>About</h4>
-      <i class="mdi mdi-chevron-right"></i>
+      <i class="mdi mdi-chevron-right" @click="showGroomerDetails()"></i>
     </div>
   </div>
   <router-view groomer="groomer" />
@@ -15,6 +15,7 @@
 <script>
 import { computed, onMounted } from "vue";
 import { AppState } from "../AppState";
+import { useRouter } from "vue-router";
 
 export default {
   props: {
@@ -23,8 +24,15 @@ export default {
       required: true,
     },
   },
-  setup() {
-    return {};
+  setup(props) {
+    const router = useRouter();
+    return {
+      props,
+      showGroomerDetails() {
+        router.push({ name: "details", params: { id: props.groomer.id } });
+        AppState.activeGroomer = props.groomer;
+      },
+    };
   },
 };
 </script>
