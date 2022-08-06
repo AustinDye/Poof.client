@@ -9,6 +9,7 @@
       <i class="mdi mdi-chevron-right"></i>
     </div>
   </div>
+  <router-view groomer="groomer" />
 </template>
 
 <script>

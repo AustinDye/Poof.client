@@ -1,15 +1,22 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import { authGuard } from '@bcwdev/auth0provider-client'
-
+import  scratch  from './components/scratch.vue'
 function loadPage(page) {
   return () => import(`./pages/${page}.vue`)
 }
 
 const routes = [
+
   {
     path: '/home',
     name: 'Home',
-    component: loadPage('HomePage')
+    component: loadPage('HomePage'),
+    children: [{
+      path: 'groomer',
+      component: scratch,
+      props: true,
+      meta: {show: true}
+    }]
   },
   {
     path: '/about',
