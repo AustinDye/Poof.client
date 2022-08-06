@@ -1,5 +1,5 @@
 <template>
-  <div class="col-md-5 d-flex justify-content-center">
+  <div class="col-md-6 d-flex justify-content-center">
     <div class="popout-circle bg-white">
       <img
         class="popout-image"
@@ -8,7 +8,7 @@
       />
     </div>
   </div>
-  <div class="col-md-7 about-service">
+  <div class="col-md-6 about-service">
     <div class="">
       <h1 class="text-white">What We Do</h1>
       <div class="color-splash mb-3 bg-success w-50"></div>
@@ -83,5 +83,22 @@ export default {
 .enter {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media only screen and (max-width: 820px) {
+  .popout-circle {
+    margin-top: 5em;
+    position: relative;
+    height: 18em;
+    width: 18em;
+    z-index: 0;
+    border-radius: 100%;
+  }
+  .popout-image {
+    height: 18em;
+    width: 18em;
+    z-index: 1;
+    position: absolute;
+  }
 }
 </style>
