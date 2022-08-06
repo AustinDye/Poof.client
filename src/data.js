@@ -9,6 +9,14 @@ export const data = {
     color: "#ACC6AA",
     description: "I made this!",
     img: "src/assets/img/wowom-removebg-preview.png"
+  },
+   {
+      id: 5,
+      name: "Edward Cullen",
+       color: "#8B0000",
+      description: "lorem lorem ipsum delor",
+      img:"src/assets/img/John_marston.webp"
+      
   }],
 
   groomers: [{

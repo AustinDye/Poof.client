@@ -31,7 +31,6 @@
   </swiper>
 </template>
 
-
 <script>
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Autoplay } from "swiper";
@@ -55,7 +54,6 @@ export default {
   },
 };
 </script>
-
 
 <style lang="scss" scoped>
 .review-container {
