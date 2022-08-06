@@ -38,7 +38,7 @@
       <!--GALLERY SECTION-->
 
       <!--wayBottom SECTION-->
-      <div class="row py-5 p-2" ref="wayBottom">
+      <div class="row justify-content-center py-5 p-2" ref="wayBottom">
         <LocationSection />
       </div>
 
