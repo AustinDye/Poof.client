@@ -1,7 +1,7 @@
 <template>
   <div class="row bg-info" @click.stop="goBack()">
     <div
-      class="col-6 d-flex flex-column justify-content-center align-items-center"
+      class="col-4 d-flex flex-column justify-content-center align-items-center"
     >
       <!-- NOTE can use the color property somewhere -->
       <div class="d-flex">
@@ -13,30 +13,6 @@
       <p class="p-5 mx-5 text-center">
         {{ groomer.description }}
       </p>
-    </div>
-    <div class="col-6 justify-content-center d-flex align-items-end">
-      <div
-        class="
-          circle
-          position-absolute
-          d-flex
-          justify-content-center
-          align-items-center
-        "
-      ></div>
-      <div
-        class="
-          row
-          d-flex
-          position-relative
-          justify-content-center
-          align-item-center
-        "
-      >
-        <div class="col-3 profile-grooms"></div>
-        <div class="col-3 profile-grooms"></div>
-        <div class="col-3 profile-grooms"></div>
-      </div>
     </div>
   </div>
 </template>
