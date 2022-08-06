@@ -44,8 +44,8 @@ h4 {
   border-radius: 100%;
   transition: 400ms;
   position: absolute;
-  width: 15em;
-  height: 15em;
+  width: 18em;
+  height: 18em;
   background: rgba(208, 67, 255, 0);
   border-right: 0em rgb(255, 255, 255) solid;
   border-radius: 100%;
@@ -63,9 +63,9 @@ h4 {
 
 .groom-circle {
   --bg-color: rgba(0, 0, 255, 0.145);
-  margin-top: 4em;
-  height: 15em;
-  width: 15em;
+  margin-top: 2.5em;
+  height: 18em;
+  width: 18em;
   background: var(--bg-color);
   border-radius: 50%;
   transition: 400ms;
@@ -75,8 +75,8 @@ h4 {
   &:hover {
     & > .swirly {
       position: absolute;
-      width: 15em;
-      height: 15em;
+      width: 18em;
+      height: 18em;
       background: rgba(208, 67, 255, 0);
       border-right: 6em rgb(255, 255, 255) solid;
       transition-delay: 200ms;
@@ -107,10 +107,9 @@ h4 {
 }
 
 .groomer-p {
-  padding-top: 1em;
   position: absolute;
-  height: 15em;
-  width: 15em;
+  height: 18em;
+  width: 18em;
   border-radius: 50% 10%;
   border-bottom: 3.5em rgb(255, 255, 255) solid;
   transition: 500ms;
@@ -122,10 +121,12 @@ h4 {
   color: black;
   position: absolute;
   left: 2%;
-  top: 8em;
+  top: 10em;
   bottom: 0.25em;
   z-index: 100;
   transition: 300ms;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
 }
 
 .fade-text {

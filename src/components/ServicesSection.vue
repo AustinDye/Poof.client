@@ -61,16 +61,16 @@ export default {
 
 <style lang="scss" scoped>
 .popout-image {
-  height: 32em;
-  width: 32em;
+  height: 38em;
+  width: 38em;
   z-index: 1;
   position: absolute;
 }
 .popout-circle {
-  margin-top: 5em;
+  margin-top: 2.8em;
   position: relative;
-  height: 32em;
-  width: 32em;
+  height: 38em;
+  width: 38em;
   z-index: 0;
   border-radius: 100%;
 }

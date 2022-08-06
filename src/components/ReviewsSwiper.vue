@@ -7,7 +7,7 @@
           delay: 30000,
           disableOnInteraction: false,
         }"
-        :space-between="50"
+        :space-between="30"
         :loop="true"
         :navigation="true"
         :modules="modules"
@@ -34,7 +34,6 @@
     </div>
   </div>
 </template>
-
 
 <script>
 import { Swiper, SwiperSlide } from "swiper/vue";
@@ -63,7 +62,6 @@ export default {
   },
 };
 </script>
-
 
 <style lang="scss" scoped>
 .review-container {
