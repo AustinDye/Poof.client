@@ -1,6 +1,6 @@
 <template>
   <header class="sticky-top">
-    <Navbar @scroll="scrollToElement" />
+    <NewNavbar @scroll="scrollToElement" />
   </header>
   <main>
     <div class="container-fluid">
@@ -44,7 +44,7 @@
 </template>
 
 <script>
-import Navbar from "../components/Navbar.vue";
+import NewNavbar from "../components/NewNavbar.vue";
 import Footer from "../components/Footer.vue";
 import HomeSection from "../components/HomeSection.vue";
 import AboutPage from "./AboutPage.vue";
@@ -64,7 +64,7 @@ export default {
   },
 
   components: {
-    Navbar,
+    NewNavbar,
     Footer,
     HomeSection,
     AboutPage,

@@ -4,3 +4,6 @@
 [] - Bootstrap icons/remix icons
 [] - Navbar
 [] - We are waiting on them to send us: colors, font, 
+[] - Fix quotes on testimonials mobile
+[] - location section with hours table
+[] - icons on the navbar dropdown

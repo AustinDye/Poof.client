@@ -1,38 +1,34 @@
 <template>
-  <div class="row">
-    <div class="col-12">
-      <swiper
-        :slides-per-view="1"
-        :autoplay="{
-          delay: 30000,
-          disableOnInteraction: false,
-        }"
-        :space-between="50"
-        :loop="true"
-        :navigation="true"
-        :modules="modules"
-        @swiper="onSwiper"
-        @slideChange="onSlideChange"
-        class="mySwiper"
-      >
-        <swiper-slide v-for="r in reviews" :key="r.id">
-          <div class="review-container">
-            <p class="review-body">
-              <i class="mdi mdi-format-quote-open"></i>{{ r.body
-              }}<i class="mdi mdi-format-quote-close"></i>
-            </p>
-          </div>
-          <div class="div d-flex justify-content-center pb-2">
-            <i class="mdi mdi-star text-success fs-4"></i
-            ><i class="mdi mdi-star text-success fs-4"></i
-            ><i class="mdi mdi-star text-success fs-4"></i
-            ><i class="mdi mdi-star text-success fs-4"></i
-            ><i class="mdi mdi-star text-success fs-4"></i>
-          </div>
-        </swiper-slide>
-      </swiper>
-    </div>
-  </div>
+  <swiper
+    :slides-per-view="1"
+    :autoplay="{
+      delay: 15000,
+      disableOnInteraction: false,
+    }"
+    :space-between="50"
+    :loop="true"
+    :navigation="true"
+    :modules="modules"
+    @swiper="onSwiper"
+    @slideChange="onSlideChange"
+    class="mySwiper"
+  >
+    <swiper-slide v-for="r in reviews" :key="r.id">
+      <div class="review-container">
+        <p class="review-body">
+          <i class="mdi mdi-format-quote-open"></i>{{ r.body
+          }}<i class="mdi mdi-format-quote-close"></i>
+        </p>
+      </div>
+      <div class="div d-flex justify-content-center pb-2">
+        <i class="mdi mdi-star text-success fs-4"></i
+        ><i class="mdi mdi-star text-success fs-4"></i
+        ><i class="mdi mdi-star text-success fs-4"></i
+        ><i class="mdi mdi-star text-success fs-4"></i
+        ><i class="mdi mdi-star text-success fs-4"></i>
+      </div>
+    </swiper-slide>
+  </swiper>
 </template>
 
 
@@ -48,12 +44,8 @@ export default {
     SwiperSlide,
   },
   setup() {
-    const onSwiper = (swiper) => {
-      console.log(swiper);
-    };
-    const onSlideChange = () => {
-      console.log("slide change");
-    };
+    const onSwiper = (swiper) => {};
+    const onSlideChange = () => {};
     return {
       onSwiper,
       onSlideChange,
