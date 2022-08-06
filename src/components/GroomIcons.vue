@@ -13,7 +13,6 @@
 </template>
 
 <script>
-import { computed, onMounted } from "vue";
 import { AppState } from "../AppState";
 import { useRouter } from "vue-router";
 
