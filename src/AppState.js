@@ -9,9 +9,9 @@ export const AppState = reactive({
   groomers: data.groomers.map((g) => {
     return new Groomer(g)
   }),
-  owners: data.owners.map((o) => {
-    return new Groomer(o)
-  }),
+  // owners: data.owners.map((o) => {
+  //   return new Groomer(o)
+  // }),
   reviews: data.reviews
 })
 
