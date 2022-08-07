@@ -1,18 +1,23 @@
 <template>
   <div class="row bg-info">
-    <div class="col-lg-4 d-flex justify-content-center" v-scrollanimation>
+    <div
+      class="col-lg-4 col-md-10 d-flex justify-content-center position-relative"
+      v-scrollanimation
+    >
       <div class="text-holder p-5">
         <h1 class="text-white">Who We Are</h1>
         <div class="color-splash bg-success w-75 align-self-end"></div>
         <p class="">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos,
           nihil. Et explicabo cum accusamus cumque qui numquam quas, temporibus
-          officia.
+          officia. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Dignissimos, nihil. Et explicabo cum accusamus cumque qui numquam
+          quas, temporibus officia.
         </p>
       </div>
     </div>
 
-    <div class="col-12 loader mt-5" id="loader">
+    <div class="col-12 loader" id="loader">
       <div class="row d-md-flex justify-content-end">
         <div
           class="col-lg-3 col-md-6 d-flex"
@@ -83,11 +88,19 @@ export default {
 }
 
 .text-holder {
+  position: absolute;
+  left: 5em;
+  top: 5em;
+}
+@media only screen and (orientation: portrait) {
+  .text-holder {
+    position: relative;
+  }
 }
 @media only screen and (orientation: landscape) {
   .text-holder {
-    padding-top: 3em;
-    position: absolute;
+    top: 0em;
+    left: 1em;
   }
 }
 .loader {

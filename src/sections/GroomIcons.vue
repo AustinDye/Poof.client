@@ -71,7 +71,7 @@ h4 {
 
 .groom-circle {
   --bg-color: rgba(0, 0, 255, 0.145);
-  margin-top: 2.5em;
+  margin-top: 6em;
   height: 18em;
   width: 18em;
   background: var(--bg-color);
@@ -118,6 +118,7 @@ h4 {
   position: absolute;
   height: 18em;
   width: 18em;
+
   border-radius: 50% 10%;
   border-bottom: 3.5em rgb(255, 255, 255) solid;
   transition: 500ms;
