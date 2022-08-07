@@ -26,10 +26,8 @@ export default {
   setup(props) {
     const router = useRouter();
     return {
-      props,
       showGroomerDetails() {
-        router.push({ name: "details", params: { id: props.groomer.id } });
-        AppState.activeGroomer = props.groomer;
+        router.push({ name: 'details', params: { id: props.groomer.id } });
       },
     };
   },

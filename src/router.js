@@ -22,7 +22,7 @@ const routes = [
       },
       {
         name: 'details',
-        path: '/groomers/:id',
+        path: 'groomers/:id',
         component: loadComponent('AboutSection'),
       }
     ]

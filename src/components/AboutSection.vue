@@ -63,6 +63,7 @@ import "swiper/css";
 import "swiper/css/effect-cards";
 // import required modules
 import { EffectCards } from "swiper";
+import { Apps32 } from '@carbon/icons-vue';
 
 export default {
   components: {
@@ -73,7 +74,8 @@ export default {
     const router = useRouter();
 		const route = useRoute()
 		onMounted(() => {
-			AppState.activeGroomer = AppState.groomers.find(g => g.id = route.params.id)
+			const staff = [...AppState.groomers, ...AppState.owners]
+			AppState.activeGroomer = staff.find(g => g.id = route.params.id)
 		})
     return {
       modules: [EffectCards],
