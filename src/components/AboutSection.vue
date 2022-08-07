@@ -1,5 +1,5 @@
 <template>
-  <div class="row bg-info" @click.stop="goBack()">
+  <div class="row bg-info" @click.stop="goBack()" v-scrollanimation>
     <div
       class="col-4 d-flex flex-column justify-content-center align-items-center"
     >

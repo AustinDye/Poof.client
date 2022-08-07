@@ -8,7 +8,7 @@
       />
     </div>
   </div>
-  <div class="col-md-6 about-service">
+  <div class="col-md-6 about-service" v-scrollanimation>
     <div class="">
       <h1 class="text-white">What We Do</h1>
       <div class="color-splash mb-3 bg-success w-50"></div>
