@@ -9,4 +9,9 @@
 [] - icons on the navbar dropdown
 [x] - footer
 [] - mobile layout fixes, centering items
-[] - center about dog
+<<<<<<< HEAD
+
+=======
+[x] - header is not size responsive
+
+> > > > > > > 14ff22bfd586091097d08f7d4657e90c5e24c159
