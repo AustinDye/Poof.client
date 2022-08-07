@@ -1,17 +1,14 @@
 <template>
-  <div class="row bg-info" v-scrollanimation>
+  <div class="row bg-info holder" v-scrollanimation>
     <div
       class="col-lg-4 col-md-10 d-flex justify-content-center position-relative"
     >
-      <div class="text-holder p-5">
-        <h1 class="text-white">Who We Are</h1>
-        <div class="color-splash bg-success w-75 align-self-end"></div>
-        <p class="">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos,
-          nihil. Et explicabo cum accusamus cumque qui numquam quas, temporibus
-          officia. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Dignissimos, nihil.
-        </p>
+      <div class="text-holder d-flex">
+        <h1 class="text-white about-text">the</h1>
+        <div class="d-flex flex-column">
+          <h1 class="text-white about-text-big">Staff</h1>
+          <div class="color-splash bg-success w-50 align-self-end"></div>
+        </div>
       </div>
     </div>
 
@@ -46,7 +43,6 @@ import { computed, ref, watchEffect } from "vue";
 import { AppState } from "../AppState";
 import { data } from "../data";
 
-import MediumGroomers from "../components/MediumGroomers.vue";
 import { useRoute } from "vue-router";
 import GroomIcons from "../sections/GroomIcons.vue";
 
@@ -67,7 +63,7 @@ export default {
       },
     };
   },
-  components: { MediumGroomers, GroomIcons },
+  components: { GroomIcons },
 };
 </script>
 
@@ -84,11 +80,15 @@ export default {
   opacity: 1;
   transform: translateY(0);
 }
+.about-text-big {
+  padding-top: 1.2em;
+}
+.holder {
+  padding: 2.2em;
+}
 
 .text-holder {
   position: absolute;
-  left: 5em;
-  top: 5em;
 }
 @media only screen and (orientation: portrait) {
   .text-holder {
@@ -97,16 +97,23 @@ export default {
 }
 @media only screen and (orientation: landscape) {
   .text-holder {
-    top: 0em;
-    left: 0em;
+    top: 6em;
+    left: 10em;
   }
-}
-.loader {
-  height: 100%;
-}
-
-.sm-groomer {
-  width: 100%;
+  .about-text {
+    font-size: 4em;
+  }
+  .about-text-big {
+    font-size: 12em;
+    padding-left: 0.2em;
+    padding-top: 0em;
+  }
+  .holder {
+    padding: 5em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    padding-right: 14em;
+  }
 }
 
 .color-splash-hori {

@@ -17,7 +17,9 @@ main {
   background-color: white;
   overflow: hidden;
 }
-
+.modak {
+  font-family: "Modak", cursive;
+}
 a {
   text-decoration: none;
 }
@@ -83,7 +85,7 @@ img {
 
 h1 {
   font-family: "Dimbo", sans-serif;
-  font-size: 8em;
+  font-size: 6em;
   color: rgb(39, 39, 39);
 }
 
@@ -102,9 +104,6 @@ h3 {
   font-weight: bold;
 }
 
-b {
-  font-family: "Modak", cursive;
-}
 .dog-text-mid {
   position: absolute;
   border-radius: 10px;
@@ -133,14 +132,15 @@ b {
   padding-top: 1em;
 }
 
-.dimbo{
+.dimbo {
   font-family: "Dimbo", sans-serif;
 }
-.modak{
+.dimbo-i {
+  font-family: "DimboItalic", sans-serif;
+}
+.modak {
   font-family: "Modak", cursive;
 }
-
-
 
 .pet-pics:active {
   transition: 1000ms;

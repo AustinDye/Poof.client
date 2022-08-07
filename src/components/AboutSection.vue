@@ -1,9 +1,10 @@
 <template>
-  <div class="row bg-info" @click.stop="goBack()" v-scrollanimation>
-    <div class="col-md-3 d-flex align-items-center flex-column text-center">
-      <h2>
-        {{ groomer.name }}
-      </h2>
+  <div class="row bg-info" v-scrollanimation>
+    <div
+      class="col-md-3 d-flex align-items-center flex-column text-center pt-5"
+      @click.stop="goBack()"
+    >
+      <h2>{{ groomer.name }}</h2>
       <div class="groom-circle m-0">
         <img
           :src="groomer.img"
@@ -12,12 +13,41 @@
         />
       </div>
     </div>
-    <div class="col-9">
-      <div class="row">
-        <div class="col-12">
+    <div class="col-6 p-5">
+      <div class="row justify-content-center">
+        <div class="col-6">
+          <Bee32 />
           <p>
             {{ groomer.description }}
           </p>
+        </div>
+
+        <div class="col-6">
+          <swiper
+            :effect="'cards'"
+            :grabCursor="true"
+            :modules="modules"
+            class="mySwiper"
+          >
+            <swiper-slide
+              ><img
+                src="https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/283516196_344714747793835_2385254879953852717_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=30y38CrzFGwAX9JCMro&_nc_ht=scontent-sea1-1.xx&oh=00_AT8QbFzxM12Lb730CxJD2sTwjJR9Y9mq-MGzr_bokjkKcA&oe=62F432DF"
+                alt="" /></swiper-slide
+            ><swiper-slide
+              ><img
+                src="https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/283516196_344714747793835_2385254879953852717_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=30y38CrzFGwAX9JCMro&_nc_ht=scontent-sea1-1.xx&oh=00_AT8QbFzxM12Lb730CxJD2sTwjJR9Y9mq-MGzr_bokjkKcA&oe=62F432DF"
+                alt="" /></swiper-slide
+            ><swiper-slide
+              ><img
+                src="https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/283516196_344714747793835_2385254879953852717_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=30y38CrzFGwAX9JCMro&_nc_ht=scontent-sea1-1.xx&oh=00_AT8QbFzxM12Lb730CxJD2sTwjJR9Y9mq-MGzr_bokjkKcA&oe=62F432DF"
+                alt=""
+            /></swiper-slide>
+            <swiper-slide
+              ><img
+                src="https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/283516196_344714747793835_2385254879953852717_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=30y38CrzFGwAX9JCMro&_nc_ht=scontent-sea1-1.xx&oh=00_AT8QbFzxM12Lb730CxJD2sTwjJR9Y9mq-MGzr_bokjkKcA&oe=62F432DF"
+                alt=""
+            /></swiper-slide>
+          </swiper>
         </div>
       </div>
     </div>
@@ -28,10 +58,21 @@
 import { computed, watchEffect } from "@vue/runtime-core";
 import { useRouter } from "vue-router";
 import { AppState } from "../AppState";
+import { Swiper, SwiperSlide } from "swiper/vue";
+import "swiper/css";
+import "swiper/css/effect-cards";
+// import required modules
+import { EffectCards } from "swiper";
+
 export default {
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
   setup() {
     const router = useRouter();
     return {
+      modules: [EffectCards],
       groomer: computed(() => AppState.activeGroomer),
       goBack() {
         router.go(-1);
@@ -74,7 +115,14 @@ h4 {
   transition: 200ms;
   font-size: 1.75em;
 }
-
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
 .groom-circle {
   --bg-color: rgba(0, 0, 255, 0.145);
   margin-top: 6em;

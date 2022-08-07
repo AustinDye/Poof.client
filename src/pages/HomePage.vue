@@ -6,26 +6,20 @@
     <div class="container-fluid">
       <!--TOP SECTION-->
 
-      <div class="row grad mx-5 top-area anchor" ref="top">
+      <div class="row grad mx-2 mx-lg-5 top-area anchor px-lg-5" ref="top">
         <HomeSection />
       </div>
 
       <!--SERVICES SECTION-->
 
-      <div id="midarea" class="row bg-info p-4" ref="middle">
+      <div id="midarea" class="row bg-info" ref="middle">
         <ServicesSection />
       </div>
 
-      <div class="row d-flex pb-5 mb-5" ref="gallery" v-scrollanimation>
+      <div class="row d-flex bot" ref="gallery" v-scrollanimation>
         <BotiqueSection />
       </div>
       <!-- <router-view /> -->
-
-      <!--ABOUT SECTION-->
-
-      <!--<div ref="bottom" class="row bg-white p-5 my-5">
-        <AboutSection />
-      </div>-->
 
       <!--GROOMERS SECTION-->
       <a ref="groomers">
@@ -35,7 +29,7 @@
       <!--GALLERY SECTION-->
 
       <!--wayBottom SECTION-->
-      <div class="row justify-content-center py-5 p-2" ref="wayBottom">
+      <div class="row justify-content-center py-5 p-2 mb-lg-5" ref="wayBottom">
         <LocationSection />
       </div>
 
@@ -105,5 +99,23 @@ h1 {
   font-family: "Dimbo", sans-serif;
   font-size: 8em;
   color: rgb(39, 39, 39);
+}
+.bot {
+  padding: 2em;
+}
+.bot {
+  @media only screen and (orientation: landscape) {
+    padding-left: 15em;
+    padding-right: 15em;
+    padding-top: 4em;
+  }
+}
+#midarea {
+  padding: 2em;
+  @media only screen and (orientation: landscape) {
+    padding: 5em;
+    padding-left: 12em;
+    padding-right: 15em;
+  }
 }
 </style>

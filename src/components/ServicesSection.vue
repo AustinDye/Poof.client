@@ -1,5 +1,5 @@
 <template>
-  <div class="col-md-6 d-flex justify-content-center" v-scrollanimation>
+  <div class="col-md-7 justify-content-center" v-scrollanimation>
     <div class="popout-circle bg-white">
       <img
         class="popout-image"
@@ -8,14 +8,10 @@
       />
     </div>
   </div>
-  <div class="col-md-6 about-service" v-scrollanimation>
+  <div class="col-md-5 about-service" v-scrollanimation>
     <div class="">
       <h1 class="text-white">What We Do</h1>
       <div class="color-splash mb-3 bg-success w-50"></div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
-        aliquid veritatis voluptatum enim a placeat deleniti quas ipsa.
-      </p>
     </div>
 
     <div class="content-box p-2 m-4 my-5">
@@ -61,16 +57,16 @@ export default {
 
 <style lang="scss" scoped>
 .popout-image {
-  height: 38em;
-  width: 38em;
+  height: 600px;
+  width: 600px;
   z-index: 1;
   position: absolute;
 }
 .popout-circle {
   margin-top: 2.8em;
   position: relative;
-  height: 38em;
-  width: 38em;
+  height: 600px;
+  width: 600px;
   z-index: 0;
   border-radius: 100%;
 }
@@ -88,17 +84,16 @@ export default {
 @media only screen and (max-width: 820px) {
   .popout-circle {
     margin-top: 5em;
-    position: relative;
-    height: 18em;
-    width: 18em;
+
+    height: 400px;
+    width: 400px;
     z-index: 0;
     border-radius: 100%;
   }
   .popout-image {
-    height: 18em;
-    width: 18em;
+    height: 400px;
+    width: 400px;
     z-index: 1;
-    position: absolute;
   }
 }
 </style>

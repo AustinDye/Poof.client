@@ -1,6 +1,7 @@
 <template>
-  <div class="col-md-4 ps-5 pt-4">
-    <h1>The Boutique</h1>
+  <div class="col-md-3 pt-md-4 pb-5 mb-5 ps-md-5 text-hold">
+    <h3 class="dimbo fs-1 text-info">the</h3>
+    <h1>Boutique</h1>
     <div class="color-splash mb-3 bg-warning w-50"></div>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quasi
@@ -11,7 +12,9 @@
     <br />
   </div>
 
-  <div class="col-lg-4 col-md-8 col-sm-12 d-flex">
+  <div
+    class="col-lg-5 col-md-8 col-sm-12 d-flex justify-content-center align-items-center"
+  >
     <div class="flower d-flex">
       <img
         class="round-image img-fluid"
@@ -25,7 +28,7 @@
       <div class="circle-3"></div>
     </div>
   </div>
-  <div class="col-lg-4 d-md-flex d-lg-block d-flex">
+  <div class="col-lg-4 d-md-flex d-lg-block d-flex pe-md-5">
     <div
       class="d-flex position-relative justify-content-center circle-holder-2"
     >
@@ -60,18 +63,19 @@ export default {
 
 .circle,
 .circle-2 {
-  z-index: 0;
+  z-index: 2;
   position: absolute;
-  height: 15em;
-  width: 15em;
+  height: 18em;
+  width: 18em;
   border-radius: 100%;
 }
+
 .circle {
-  background-color: rgba($success, 0.9);
+  background-color: rgba($success, 0.6);
   border: 0.3em white solid;
 }
 .circle-2 {
-  background-color: rgba($primary, 0.9);
+  background-color: rgba($primary, 0.6);
   border: 0.3em white solid;
 }
 .circle-3 {
@@ -84,7 +88,6 @@ export default {
 }
 
 .flower {
-  margin-top: 12em;
   position: relative;
 }
 
@@ -95,15 +98,15 @@ export default {
 }
 
 .small-image {
-  z-index: 2;
+  z-index: 3;
   margin-top: 2em;
-  width: 15em;
+  width: 18em;
 }
 .small-image-2 {
-  z-index: 2;
+  z-index: 3;
   padding-top: 3em;
   padding-right: 1em;
-  width: 18em;
+  width: 25em;
 }
 
 .petal-1,
@@ -119,6 +122,9 @@ export default {
   border-radius: 100% 0 100% 0;
   animation: spin 5s;
   animation-iteration-count: infinite;
+}
+.text-hold {
+  z-index: 3;
 }
 
 .petal-2 {
@@ -152,21 +158,20 @@ export default {
     position: absolute;
   }
 }
+.circle-holder,
+.circle-holder-2 {
+  margin-bottom: 5em;
+}
 
 @media screen and (orientation: landscape) {
-  .circle-holder,
-  .circle-holder-2 {
-    margin-top: 7em;
-  }
   .flower {
-    left: 10em;
   }
 }
 
 @media only screen and (max-width: 759px) {
   .circle-holder,
   .circle-holder-2 {
-    top: 17em;
+    top: 12em;
     z-index: 3;
     margin-bottom: 15em;
   }
@@ -178,9 +183,6 @@ export default {
   }
 
   .flower {
-    margin-top: 0.5em;
-    left: 0.2em;
-
     margin-left: 0em;
   }
 }

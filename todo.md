@@ -1,7 +1,7 @@
 [] - Needs more specific colors
 [] - Refactor CSS colors to variables
 [] - Using CSS before and after to tie icons to text
-[] - Corbon design icon library
+[x] - Corbon design icon library
 [] - Navbar
 [] - We are waiting on them to send us: colors, font,
 [] - Fix quotes on testimonials mobile

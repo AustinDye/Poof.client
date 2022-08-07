@@ -8,6 +8,8 @@
   },
   "dependencies": {
     "@bcwdev/auth0provider-client": "^0.0.12",
+    "@carbon/icons-vue": "^10.49.1",
+    "@carbon/vue": "^2.44.0",
     "@fawmi/vue-google-maps": "^0.9.72",
     "@mdi/font": "^6.3.95",
     "@popperjs/core": "^2.10.2",
