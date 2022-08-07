@@ -9,13 +9,13 @@
   flex-direction: column;
   min-height: 100vh;
   color: #676767;
+  overflow: hidden;
   background-color: white;
 }
 
 main {
   flex-grow: 1;
   background-color: white;
-  overflow: hidden;
 }
 .modak {
   font-family: "Modak", cursive;
