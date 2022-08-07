@@ -23,7 +23,7 @@ a {
 }
 
 p {
-  font-family: "Lato", sans-serif;
+  font-family: sans-serif;
   font-size: 1.2em;
 }
 
@@ -132,6 +132,15 @@ b {
   transition: 1000ms;
   padding-top: 1em;
 }
+
+.dimbo{
+  font-family: "Dimbo", sans-serif;
+}
+.modak{
+  font-family: "Modak", cursive;
+}
+
+
 
 .pet-pics:active {
   transition: 1000ms;
