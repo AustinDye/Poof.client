@@ -15,11 +15,8 @@
       <div id="midarea" class="row bg-info p-4" ref="middle">
         <ServicesSection />
       </div>
-      <div
-        class="row d-flex pb-5 mb-5"
-        ref="gallery"
-        v-scrollanimation="{ before: 'before-enter', after: 'upon-exit' }"
-      >
+
+      <div class="row d-flex pb-5 mb-5" ref="gallery" v-scrollanimation>
         <BotiqueSection />
       </div>
       <!-- <router-view /> -->

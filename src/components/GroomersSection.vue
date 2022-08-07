@@ -1,8 +1,7 @@
 <template>
-  <div class="row bg-info">
+  <div class="row bg-info" v-scrollanimation>
     <div
       class="col-lg-4 col-md-10 d-flex justify-content-center position-relative"
-      v-scrollanimation
     >
       <div class="text-holder p-5">
         <h1 class="text-white">Who We Are</h1>

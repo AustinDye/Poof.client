@@ -1,5 +1,5 @@
 <template>
-  <div class="col-md-6 d-flex justify-content-center">
+  <div class="col-md-6 d-flex justify-content-center" v-scrollanimation>
     <div class="popout-circle bg-white">
       <img
         class="popout-image"
