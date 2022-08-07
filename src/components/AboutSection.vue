@@ -55,7 +55,7 @@
 </template>
 
 <script>
-import { computed, watchEffect } from "@vue/runtime-core";
+import { computed, ref, watchEffect } from "@vue/runtime-core";
 import { useRoute, useRouter } from "vue-router";
 import { AppState } from "../AppState";
 import { Swiper, SwiperSlide } from "swiper/vue";
@@ -73,16 +73,16 @@ export default {
   setup() {
     const router = useRouter();
     const route = useRoute();
+    const groomer = ref({});
     watchEffect(() => {
-      const staff = [...AppState.groomers, ...AppState.owners];
-      AppState.activeGroomer = staff.find((g) => g.id == route.params.id);
+      groomer.value = AppState.staff.find((g) => g.id == route.params.id);
     });
     return {
+      groomer,
       modules: [EffectCards],
-      groomer: computed(() => AppState.activeGroomer),
       goBack() {
         router.go(-1);
-        AppState.activeGroomer = {};
+        groomer.value = {};
       },
     };
   },

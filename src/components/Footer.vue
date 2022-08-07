@@ -1,66 +1,78 @@
 <template>
-  <!-- <div>
-    <div class="row d-flex navbar justify-content-between">
-      <div class="col-6 text-center text-white">
-        <p>PoofPets© 2022</p>
-        <p>Website Developed by Austin Dye</p>
-      </div>
-      <div class="row position-absolute dog-items">
-        <div class="col-12 d-flex justify-content-between">
-          <div class="">
-            <i class="mdi mdi-tennis-ball icon-fun"></i>
-          </div>
-          <div class="">
-            <i class="mdi mdi-bone icon-fun"></i>
-          </div>
-          <div class="">
-            <i class="mdi mdi-tennis-ball icon-fun"></i>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 text-center d-block">
-        <b class="btn text-white selectable" @click="$emit('scroll', 'middle')"
-          >Services</b
-        >
-        <b
-          class="btn text-white selectable"
-          @click="$emit('scroll', 'wayBottom')"
-          >Location</b
-        >
-        <b class="btn text-white selectable" @click="$emit('scroll', 'bottom')"
-          >About</b
-        >
-      </div>
-    </div>
-  </div> -->
   <div>
-    <div class="row d-flex navbar justify-content-between">
-      <div class="col-1 text-start">
+    <div class="row navbar justify-content-between">
+      <div class="bone-banner">
+        <i class="mdi mdi-bone icon-fun ps-2"></i>
+        <i class="mdi mdi-bone icon-fun ps-2"></i>
+        <i class="mdi mdi-dog icon-fun ps-2"></i>
+        <i class="mdi mdi-content-cut icon-fun ps-2"></i>
+        <i class="mdi mdi-dog icon-fun ps-2"></i>
         <i class="mdi mdi-tennis-ball icon-fun ps-2"></i>
+        <i class="mdi mdi-content-cut icon-fun ps-2"></i>
+        <i class="mdi mdi-dog icon-fun ps-2"></i>
+        <i class="mdi mdi-bone icon-fun ps-2"></i>
+        <i class="mdi mdi-dog icon-fun ps-2"></i>
+        <i class="mdi mdi-dog icon-fun ps-2"></i>
+        <i class="mdi mdi-content-cut icon-fun ps-2"></i>
+        <i class="mdi mdi-bone icon-fun ps-2"></i>
+        <i class="mdi mdi-tennis-ball icon-fun ps-2"></i>
+        <i class="mdi mdi-tennis-ball icon-fun ps-2"></i>
+        <i class="mdi mdi-content-cut icon-fun ps-2"></i>
+        <i class="mdi mdi-content-cut icon-fun ps-2"></i>
+        <i class="mdi mdi-bone icon-fun ps-2"></i>
+        <i class="mdi mdi-tennis-ball icon-fun ps-2"></i>
+        <i class="mdi mdi-tennis-ball icon-fun ps-2"></i>
+        <i class="mdi mdi-content-cut icon-fun ps-2"></i>
+        <i class="mdi mdi-bone icon-fun ps-2"></i>
+        <i class="mdi mdi-tennis-ball icon-fun ps-2"></i>
+        <i class="mdi mdi-content-cut icon-fun ps-2"></i>
+        <i class="mdi mdi-bone icon-fun ps-2"></i>
+        <i class="mdi mdi-tennis-ball icon-fun ps-2"></i>
+        <i class="mdi mdi-tennis-ball icon-fun ps-2"></i>
+        <i class="mdi mdi-content-cut icon-fun ps-2"></i>
+        <i class="mdi mdi-bone icon-fun ps-2"></i>
+        <i class="mdi mdi-tennis-ball icon-fun ps-2"></i>
+        <i class="mdi mdi-content-cut icon-fun ps-2"></i>
+        <i class="mdi mdi-bone icon-fun ps-2"></i>
+        <i class="mdi mdi-tennis-ball icon-fun ps-2"></i>
+        <i class="mdi mdi-tennis-ball icon-fun ps-2"></i>
+        <i class="mdi mdi-content-cut icon-fun ps-2"></i>
+        <i class="mdi mdi-bone icon-fun ps-2"></i>
+        <i class="mdi mdi-tennis-ball icon-fun ps-2"></i>
+        <i class="mdi mdi-content-cut icon-fun ps-2"></i>
       </div>
+      <div class="col-1"></div>
       <div class="col-3 text-center text-white">
         <p>PoofPets© 2022</p>
         <p>Website Developed by Austin Dye</p>
       </div>
-      <div class="col-1 text-center">
-        <i class="mdi mdi-bone icon-fun"></i>
+      <div class="col-3 text-center">
+        <img
+          class="my-3 logo"
+          src="src/assets/img/pooflogo-removebg.png"
+          alt=""
+        />
       </div>
-      <div class="col-3 text-center d-block">
-        <b class="btn text-white selectable" @click="$emit('scroll', 'middle')"
-          >Services</b
-        >
-        <b
-          class="btn text-white selectable"
-          @click="$emit('scroll', 'wayBottom')"
-          >Location</b
-        >
-        <b class="btn text-white selectable" @click="$emit('scroll', 'bottom')"
-          >About</b
-        >
+      <div class="col-3 d-flex justify-content-center">
+        <div class="links">
+          <b
+            class="btn text-white selectable"
+            @click="$emit('scroll', 'middle')"
+            >Services</b
+          >
+          <b
+            class="btn text-white selectable"
+            @click="$emit('scroll', 'wayBottom')"
+            >Location</b
+          >
+          <b
+            class="btn text-white selectable"
+            @click="$emit('scroll', 'bottom')"
+            >About</b
+          >
+        </div>
       </div>
-      <div class="col-1 text-end">
-        <i class="mdi mdi-tennis-ball icon-fun pe-2"></i>
-      </div>
+      <div class="col-1"></div>
     </div>
   </div>
 </template>
@@ -73,16 +85,46 @@ export default {
 };
 </script>
 
-<style scoped>
-.logo {
-  width: 10em;
+  <style lang="scss" scoped>
+$icons: 15;
+$angles: (45, 15, 25, 80);
 
+.navbar {
+  position: relative;
+  background-color: #acca90;
   z-index: 5;
-
-  /*box-shadow: 0.5px 0.5px 2px black;*/
 }
+
+.links {
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+}
+
+.bone-banner {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  inset: 0;
+  margin: auto;
+  z-index: -1;
+  width: 91vw;
+}
+
+@for $i from 1 through 40 {
+  .bone-banner i:nth-child(#{$i}) {
+    $angle: (random(360));
+    display: inline-block;
+    transform: rotate($angle + deg);
+  }
+}
+
 a:hover {
   text-decoration: none;
+}
+.logo {
+  width: 10em;
+  height: auto;
 }
 .nav-link {
   text-transform: uppercase;
@@ -92,12 +134,8 @@ a:hover {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
-.navbar {
-  background-color: var(--bs-info);
-}
-
 .icon-fun {
   font-size: 3em;
-  color: rgba(172, 202, 144, 0.252);
+  color: rgba(28, 29, 28, 0.252);
 }
 </style>
