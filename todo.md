@@ -7,5 +7,5 @@
 [] - Fix quotes on testimonials mobile
 [x] - location section with hours table
 [] - icons on the navbar dropdown
-[] - footer
+[x] - footer
 [] - mobile layout fixes, centering items

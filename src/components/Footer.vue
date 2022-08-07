@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <!-- <div>
     <div class="row d-flex navbar justify-content-between">
       <div class="col-6 text-center text-white">
         <p>PoofPets© 2022</p>
@@ -19,13 +19,47 @@
         </div>
       </div>
       <div class="col-6 text-center d-block">
-        <b class="btn text-white" @click="$emit('scroll', 'middle')"
+        <b class="btn text-white selectable" @click="$emit('scroll', 'middle')"
           >Services</b
         >
-        <b class="btn text-white" @click="$emit('scroll', 'wayBottom')"
+        <b
+          class="btn text-white selectable"
+          @click="$emit('scroll', 'wayBottom')"
           >Location</b
         >
-        <b class="btn text-white" @click="$emit('scroll', 'bottom')">About</b>
+        <b class="btn text-white selectable" @click="$emit('scroll', 'bottom')"
+          >About</b
+        >
+      </div>
+    </div>
+  </div> -->
+  <div>
+    <div class="row d-flex navbar justify-content-between">
+      <div class="col-1 text-start">
+        <i class="mdi mdi-tennis-ball icon-fun ps-2"></i>
+      </div>
+      <div class="col-3 text-center text-white">
+        <p>PoofPets© 2022</p>
+        <p>Website Developed by Austin Dye</p>
+      </div>
+      <div class="col-1 text-center">
+        <i class="mdi mdi-bone icon-fun"></i>
+      </div>
+      <div class="col-3 text-center d-block">
+        <b class="btn text-white selectable" @click="$emit('scroll', 'middle')"
+          >Services</b
+        >
+        <b
+          class="btn text-white selectable"
+          @click="$emit('scroll', 'wayBottom')"
+          >Location</b
+        >
+        <b class="btn text-white selectable" @click="$emit('scroll', 'bottom')"
+          >About</b
+        >
+      </div>
+      <div class="col-1 text-end">
+        <i class="mdi mdi-tennis-ball icon-fun pe-2"></i>
       </div>
     </div>
   </div>
