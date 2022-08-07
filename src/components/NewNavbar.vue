@@ -2,12 +2,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
     <div class="logo-container">
       <router-link class="navbar-brand d-flex" :to="{ name: 'Home' }">
-        <img
-          class="logo rounded"
-          src="src/assets/img/pooflogo.jpeg"
-          alt=""
-          @click="$emit('scroll', 'top')"
-        />
+        <h2 class="logo rounded" @click="$emit('scroll', 'top')">Poof Pets</h2>
       </router-link>
     </div>
     <div class="container-fluid">
@@ -57,7 +52,6 @@
   </nav>
 </template>
 
-
 <script>
 export default {
   setup() {
@@ -65,7 +59,6 @@ export default {
   },
 };
 </script>
-
 
 <style lang="scss" scoped>
 .navbar {
@@ -76,8 +69,6 @@ export default {
   }
 }
 .logo-container {
-  z-index: 5;
-  top: 13px;
   position: absolute;
   @media (max-width: 578px) {
     right: 5px;

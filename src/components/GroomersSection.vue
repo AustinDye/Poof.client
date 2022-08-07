@@ -11,8 +11,7 @@
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos,
           nihil. Et explicabo cum accusamus cumque qui numquam quas, temporibus
           officia. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Dignissimos, nihil. Et explicabo cum accusamus cumque qui numquam
-          quas, temporibus officia.
+          Dignissimos, nihil.
         </p>
       </div>
     </div>
@@ -100,7 +99,7 @@ export default {
 @media only screen and (orientation: landscape) {
   .text-holder {
     top: 0em;
-    left: 1em;
+    left: 0em;
   }
 }
 .loader {
