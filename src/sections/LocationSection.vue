@@ -1,7 +1,7 @@
 <template>
   <div class="col-12 d-flex justify-content-center">
     <div class="text-holder">
-      <h1>Where to find us</h1>
+      <h1>Where to Find Us</h1>
       <div class="color-splash mb-4 bg-primary"></div>
     </div>
   </div>
