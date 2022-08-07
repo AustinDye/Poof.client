@@ -14,10 +14,11 @@
     class="mySwiper"
   >
     <swiper-slide v-for="r in reviews" :key="r.id">
-      <div class="review-container">
-        <p class="review-body">
-          <i class="mdi mdi-format-quote-open"></i>{{ r.body
-          }}<i class="mdi mdi-format-quote-close"></i>
+      <div class="review-container mt-5 pb-0">
+        <p class="review-body mb-0 text-center">
+          <q>
+            {{ r.body }}
+          </q>
         </p>
       </div>
       <div class="div d-flex justify-content-center pb-2">
