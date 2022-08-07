@@ -11,7 +11,7 @@
   </div>
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="">
-      <router-link class="navbar-brand d-flex" :to="{ name: 'Home' }">
+      <router-link class="navbar-brand d-flex" :to="{ path: '/home' }">
         <div class="position-absolute logo-container">
           <img
             src="src/assets/img/pooflogo-removebg.png"

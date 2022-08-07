@@ -52,10 +52,12 @@ import { ref } from "@vue/reactivity";
 import { onMounted, watchEffect } from "@vue/runtime-core";
 import BotiqueSection from "../components/BotiqueSection.vue";
 import LocationSection from "../sections/LocationSection.vue";
+import { AppState } from '../AppState.js';
 export default {
   name: "Home",
   methods: {
     scrollToElement(target) {
+			AppState.activeGroomer = {};
       console.log(target);
       let el = this.$refs[target];
       if (el) {

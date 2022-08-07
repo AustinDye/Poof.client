@@ -4,7 +4,7 @@
 [x] - Corbon design icon library
 [] - Navbar
 [] - We are waiting on them to send us: colors, font,
-[] - Fix quotes on testimonials mobile
+[x] - Fix quotes on testimonials mobile
 [x] - location section with hours table
 [] - icons on the navbar dropdown
 [x] - footer
