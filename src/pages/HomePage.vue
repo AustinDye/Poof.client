@@ -49,7 +49,7 @@ import GallerySection from "../components/GallerySection.vue";
 import ServicesSection from "../components/ServicesSection.vue";
 import { useRoute } from "vue-router";
 import { ref } from "@vue/reactivity";
-import { watchEffect } from "@vue/runtime-core";
+import { onMounted, watchEffect } from "@vue/runtime-core";
 import BotiqueSection from "../components/BotiqueSection.vue";
 import LocationSection from "../sections/LocationSection.vue";
 export default {

@@ -55,8 +55,8 @@
 </template>
 
 <script>
-import { computed, watchEffect } from "@vue/runtime-core";
-import { useRouter } from "vue-router";
+import { computed, onMounted, watchEffect } from "@vue/runtime-core";
+import { useRoute, useRouter } from "vue-router";
 import { AppState } from "../AppState";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
@@ -71,6 +71,10 @@ export default {
   },
   setup() {
     const router = useRouter();
+		const route = useRoute()
+		onMounted(() => {
+			AppState.activeGroomer = AppState.groomers.find(g => g.id = route.params.id)
+		})
     return {
       modules: [EffectCards],
       groomer: computed(() => AppState.activeGroomer),
