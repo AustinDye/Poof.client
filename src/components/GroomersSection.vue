@@ -42,9 +42,10 @@
 import { computed, ref, watchEffect } from "vue";
 import { AppState } from "../AppState";
 import { data } from "../data";
-import GroomIcons from "./GroomIcons.vue";
-import MediumGroomers from "./MediumGroomers.vue";
+
+import MediumGroomers from "../components/MediumGroomers.vue";
 import { useRoute } from "vue-router";
+import GroomIcons from "../sections/GroomIcons.vue";
 
 export default {
   setup() {

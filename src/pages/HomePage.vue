@@ -59,6 +59,8 @@ import ServicesSection from "../components/ServicesSection.vue";
 import { useRoute } from "vue-router";
 import { ref } from "@vue/reactivity";
 import { watchEffect } from "@vue/runtime-core";
+import BotiqueSection from "../components/BotiqueSection.vue";
+import LocationSection from "../sections/LocationSection.vue";
 export default {
   name: "Home",
   methods: {
@@ -79,6 +81,8 @@ export default {
     AboutSection,
     GallerySection,
     ServicesSection,
+    BotiqueSection,
+    LocationSection,
   },
   setup() {
     const route = useRoute();
@@ -99,5 +103,10 @@ export default {
   border: 0.5em white solid;
   background-color: rgba($info, 1);
   // box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.195);
+}
+h1 {
+  font-family: "Dimbo", sans-serif;
+  font-size: 8em;
+  color: rgb(39, 39, 39);
 }
 </style>

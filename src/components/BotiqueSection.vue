@@ -143,11 +143,12 @@ export default {
     display: none;
   }
   .flower {
-    margin-top: 7em;
+    margin-top: 18em;
     background-color: rgba($info, 0.4);
     border-radius: 100%;
     margin-bottom: 5em;
 
+    margin-left: 6em;
     position: absolute;
   }
 }
@@ -179,6 +180,8 @@ export default {
   .flower {
     margin-top: 0.5em;
     left: 0.2em;
+
+    margin-left: 0em;
   }
 }
 

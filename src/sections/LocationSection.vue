@@ -1,5 +1,5 @@
 <template>
-  <div class="col-md-4 mb-4">
+  <div class="col-md-10 col-sm-12 col-lg-4 mb-4">
     <GMapMap
       :center="center"
       :zoom="13"
