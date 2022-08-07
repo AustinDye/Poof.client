@@ -3,16 +3,16 @@
     <div
       class="col-4 d-flex flex-column justify-content-center align-items-center"
     >
-      <!-- NOTE can use the color property somewhere -->
-      <div class="d-flex">
-        <img :src="groomer.img" class="pt-4 mt-5 groomer" />
+      <div class="groom-circle" :style="`--bg-color: ${groomer.color}`">
+        <h3 class="fade-text">{{ groomer.name }}</h3>
+        <img :src="groomer.img" class="groomer-p" />
+        <p class="groomer-text">{{ groomer.name }}</p>
+        <div class="swirly"></div>
+        <div class="profile-button btn">
+          <h4>About</h4>
+          <i class="mdi mdi-chevron-right" @click="showGroomerDetails()"></i>
+        </div>
       </div>
-      <h4 class="text-dark fs-2">{{ groomer.name }}</h4>
-      <div class="border w-25 border-danger"></div>
-      <p class="fs-5">Dog Groomer</p>
-      <p class="p-5 mx-5 text-center">
-        {{ groomer.description }}
-      </p>
     </div>
   </div>
 </template>
