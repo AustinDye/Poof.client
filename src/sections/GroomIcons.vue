@@ -27,7 +27,7 @@ export default {
     const router = useRouter();
     return {
       showGroomerDetails() {
-        router.push({ name: 'details', params: { id: props.groomer.id } });
+        router.push({ name: "details", params: { id: props.groomer.id } });
       },
     };
   },
@@ -42,7 +42,6 @@ export default {
   font-size: 3em;
   transition: 500ms;
 }
-
 h4 {
   opacity: 0;
 }
