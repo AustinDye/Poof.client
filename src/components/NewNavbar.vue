@@ -1,5 +1,13 @@
 <template>
-  <div class="w-100 bg-white d-flex justify-content-end py-1 contact-hours">
+  <div
+    class="
+      w-100
+      d-lg-flex d-md-block d-none
+      justify-content-end
+      py-1
+      contact-hours
+    "
+  >
     <span class="fs-3 dimbo d-flex pt-1"
       ><PhoneFilled /><a class="" href="tel:555-555-5555">1-208-555-5555</a>
     </span>
@@ -10,7 +18,7 @@
     </span>
   </div>
   <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="">
+    <div class="loader">
       <router-link class="navbar-brand d-flex" :to="{ path: '/home' }">
         <div class="position-absolute logo-container">
           <img
@@ -85,9 +93,6 @@ export default {
   height: 11em;
   width: 11em;
   border: 1em rgba($success, 1) solid;
-  @media (max-width: 578px) {
-    right: 5px;
-  }
 }
 .logo {
   height: 8.8em;
@@ -145,6 +150,50 @@ b {
 .navbar-collapse {
   @media only screen and (orientation: landscape) {
     margin-right: 7em;
+  }
+}
+
+@media (max-width: 578px) {
+  .loader {
+    position: relative;
+  }
+  .logo-container {
+    top: -2em !important;
+    left: 10em;
+    border-radius: 100% 100% 0% 10%;
+    height: 7.3em;
+    width: 7.3em;
+  }
+  .logo {
+    right: -0.9em;
+    top: -1em;
+    border-radius: 100% 100% 0% 0%;
+    height: 147px;
+    width: 147px;
+  }
+}
+@media only screen and (orientation: portrait) {
+  .contact-hours {
+    position: absolute;
+    top: 0.5em;
+    left: 25em;
+    z-index: 5;
+  }
+  .logo-container {
+    top: -0.5em;
+    height: 8.5em;
+    width: 8.5em;
+  }
+  .logo {
+    right: -0.9em;
+    top: -1em;
+    height: 172px;
+    width: 172px;
+  }
+}
+@media only screen and (orientation: landscape) {
+  .contact-hours {
+    background-color: white;
   }
 }
 </style>
