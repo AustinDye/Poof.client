@@ -27,6 +27,13 @@ const routes = [
       }
     ]
   },
+	// NOTE adding in a redirect to the homepage
+	{
+		path:'/',
+		redirect: to => {
+			return { path: '/home' }
+		},
+	},
   {
     path: '/about',
     name: 'About',
