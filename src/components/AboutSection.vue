@@ -75,7 +75,7 @@ export default {
 		const route = useRoute()
 		onMounted(() => {
 			const staff = [...AppState.groomers, ...AppState.owners]
-			AppState.activeGroomer = staff.find(g => g.id = route.params.id)
+			AppState.activeGroomer = staff.find(g => g.id == route.params.id)
 		})
     return {
       modules: [EffectCards],
