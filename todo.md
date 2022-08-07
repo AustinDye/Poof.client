@@ -9,3 +9,4 @@
 [] - icons on the navbar dropdown
 [x] - footer
 [] - mobile layout fixes, centering items
+[] - center about dog
