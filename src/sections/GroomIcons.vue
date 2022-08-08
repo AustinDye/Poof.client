@@ -1,6 +1,6 @@
 <template>
   <div class="groom-circle" :style="`--bg-color: ${groomer.color}`">
-    <h3 class="fade-text">{{ groomer.name }}</h3>
+    <p class="title-text fade-text">{{ groomer.name }}</p>
     <img
       :src="groomer.img"
       class="groomer-p"
@@ -9,7 +9,6 @@
     <p class="groomer-text">{{ groomer.name }}</p>
     <div class="swirly"></div>
     <div class="profile-button btn">
-      <h4>About</h4>
       <i class="mdi mdi-chevron-right" @click="showGroomerDetails()"></i>
     </div>
   </div>
