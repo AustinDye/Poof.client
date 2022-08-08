@@ -34,9 +34,3 @@
 [] - SEO?
 [] - Domain hosting
 [] - Accessibility
-=======
-<<<<<<< HEAD
-
-=======
-[x] - header is not size responsive
-

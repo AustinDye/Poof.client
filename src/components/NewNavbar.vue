@@ -168,6 +168,39 @@ b {
   color: rgb(39, 39, 39);
   font-weight: bold;
   font-size: 1.3em;
+  display: block;
+  position: relative;
+}
+
+b::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: white;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+b {
+  overflow: hidden;
+}
+
+b::after {
+  opacity: 1;
+  transform: translate3d(-100%, 0, 0);
+}
+
+b:hover {
+  cursor: pointer;
+  // background-color: lighten(#acca90, 10);
+}
+
+b:hover::after,
+b:focus::after {
+  transform: translate3d(0, 0, 0);
 }
 
 .navbar-collapse {
