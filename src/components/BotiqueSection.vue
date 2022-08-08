@@ -1,5 +1,5 @@
 <template>
-  <div class="col-md-3 pt-md-4 pb-5 mb-5 ps-md-5 text-hold">
+  <div class="col-md-3 pt-md-4 text-hold ps-0 pe-5">
     <p class="big-the dimbo text-info">the</p>
     <h1>Boutique</h1>
     <div class="color-splash mb-3 bg-warning w-50"></div>
@@ -13,12 +13,7 @@
   </div>
 
   <div
-    class="
-      col-lg-5 col-md-8 col-sm-12
-      d-flex
-      justify-content-center
-      align-items-center
-    "
+    class="col-lg-6 col-md-8 col-sm-12 d-flex justify-content-center align-items-center"
   >
     <div class="flower d-flex">
       <img
@@ -33,7 +28,7 @@
       <div class="circle-3"></div>
     </div>
   </div>
-  <div class="col-lg-4 d-md-flex d-lg-block d-flex pe-md-5">
+  <div class="col-lg-3 d-md-flex d-lg-block d-flex pe-md-5">
     <div
       class="d-flex position-relative justify-content-center circle-holder-2"
     >
@@ -73,8 +68,8 @@ export default {
 .circle-2 {
   z-index: 2;
   position: absolute;
-  height: 18em;
-  width: 18em;
+  height: 240px;
+  width: 240px;
   border-radius: 100%;
 }
 
@@ -100,21 +95,18 @@ export default {
 }
 
 .round-image {
-  height: 25em;
-  width: 25em;
+  height: 400px;
+  width: 400px;
   z-index: 1;
 }
 
 .small-image {
   z-index: 3;
-  margin-top: 2em;
-  width: 18em;
+  margin-top: 3em;
 }
 .small-image-2 {
   z-index: 3;
-  padding-top: 3em;
-  padding-right: 1em;
-  width: 25em;
+  padding-top: 4em;
 }
 
 .petal-1,
@@ -172,7 +164,11 @@ export default {
 }
 
 @media screen and (orientation: landscape) {
-  .flower {
+  .circle-holder-2 {
+    margin-top: 2em;
+  }
+  .circle-holder {
+    margin-top: 15em;
   }
 }
 

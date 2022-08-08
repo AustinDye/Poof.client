@@ -105,6 +105,7 @@ h1 {
 
 .bot {
   padding: 2em;
+  margin-bottom: 1em;
 }
 .bot {
   @media only screen and (orientation: landscape) {

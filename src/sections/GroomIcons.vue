@@ -64,8 +64,8 @@ h4 {
   display: flex;
   opacity: 1;
   color: rgba(174, 174, 174, 0.203);
-  bottom: 5.5em;
-  right: 0.2em;
+  bottom: 7em;
+  left: 200px;
   transition: 200ms;
   font-size: 1.75em;
 }
