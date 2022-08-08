@@ -15,7 +15,7 @@
     </div>
 
     <div class="content-box p-2 m-4 my-5">
-      <h3><i class="mdi mdi-content-cut mx-3"></i>Grooming</h3>
+      <p><i class="title-text mdi mdi-content-cut mx-3"></i>Grooming</p>
       <div class="row">
         <div class="col-12">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. A alias ipsa
@@ -26,7 +26,7 @@
     </div>
 
     <div class="content-box p-2 m-4 my-5">
-      <h3><i class="mdi mdi-shower mx-3"></i>Bathing</h3>
+      <p><i class="title-text mdi mdi-shower mx-3"></i>Bathing</p>
       <div class="color-splash mb-3 bg- w-50"></div>
       <div class="row">
         <div class="col-12">
@@ -36,7 +36,7 @@
       </div>
     </div>
     <div class="content-box p-2 m-4 my-5">
-      <h3><i class="mdi mdi-hair-dryer mx-3"></i>More!</h3>
+      <p><i class="title-text mdi mdi-hair-dryer mx-3"></i>More!</p>
       <div class="row">
         <div class="col-12 px-3">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. A alias ipsa

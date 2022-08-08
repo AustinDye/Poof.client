@@ -30,17 +30,17 @@
 				
 			</div> -->
       <span class="text-center">
-        <h4>
+        <p class="fs-4">
           <i class="mdi mdi-clock mx-1"></i>
           Mon - Sat: 7:30AM - 3:30PM
-        </h4>
+        </p>
       </span>
       <span class="text-center">
-        <h5>
+        <p class="fs-4">
           <i class="mdi mdi-phone mx-1"></i>
 
           208-555-5555
-        </h5>
+        </p>
       </span>
     </div>
   </div>
