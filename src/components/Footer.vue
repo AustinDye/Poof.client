@@ -55,21 +55,11 @@
       </div>
       <div class="col-3 d-flex justify-content-center">
         <div class="links">
-          <b
-            class="btn text-white selectable"
-            @click="$emit('scroll', 'middle')"
-            >Services</b
-          >
-          <b
-            class="btn text-white selectable"
-            @click="$emit('scroll', 'wayBottom')"
+          <b class="text-white" @click="$emit('scroll', 'middle')">Services</b>
+          <b class="text-white" @click="$emit('scroll', 'wayBottom')"
             >Location</b
           >
-          <b
-            class="btn text-white selectable"
-            @click="$emit('scroll', 'bottom')"
-            >About</b
-          >
+          <b class="text-white" @click="$emit('scroll', 'bottom')">About</b>
         </div>
       </div>
       <div class="col-1"></div>
@@ -119,9 +109,43 @@ $angles: (45, 15, 25, 80);
   }
 }
 
-a:hover {
-  text-decoration: none;
+b {
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
 }
+
+b::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.2em;
+  background-color: white;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+b {
+  overflow: hidden;
+}
+
+b::after {
+  opacity: 1;
+  transform: translate3d(-100%, 0, 0);
+}
+
+b:hover {
+  cursor: pointer;
+  // background-color: lighten(#acca90, 10);
+}
+
+b:hover::after,
+b:focus::after {
+  transform: translate3d(0, 0, 0);
+}
+
 .logo {
   width: 10em;
   height: auto;

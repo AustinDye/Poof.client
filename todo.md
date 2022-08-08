@@ -34,11 +34,3 @@
 [] - SEO?
 [] - Domain hosting
 [] - Accessibility
-=======
-<<<<<<< HEAD
-
-=======
-[x] - header is not size responsive
-
-> > > > > > > 14ff22bfd586091097d08f7d4657e90c5e24c159
->>>>>>> a29e8c8d8b0478af6e86f2d5311ac8c4f1d231e1
