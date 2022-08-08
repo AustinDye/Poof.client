@@ -16,6 +16,7 @@
 main {
   flex-grow: 1;
   background-color: white;
+  transition-duration: 1000ms;
 }
 .modak {
   font-family: "Modak", cursive;
@@ -72,6 +73,7 @@ img {
 
 .upon-exit {
   opacity: 0;
+  transform: translateY(100em);
 }
 
 @font-face {
