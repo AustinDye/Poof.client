@@ -14,11 +14,7 @@
 
     <div class="col-12 loader" id="loader">
       <div class="row d-md-flex justify-content-end">
-        <div
-          class="col-lg-3 col-md-6 d-flex"
-          v-for="owner in owners"
-          :key="owner.id"
-        >
+        <div class="col-lg-3 col-md-6" v-for="owner in owners" :key="owner.id">
           <GroomIcons :groomer="owner" :key="owner.id"> </GroomIcons>
         </div>
       </div>
@@ -27,7 +23,7 @@
     <div class="col-12 loader pb-5 mb-5" id="loader">
       <div class="row d-block d-md-flex groom-row justify-content-end">
         <div
-          class="col-lg-3 col-md-6 d-flex"
+          class="col-lg-3 col-md-6"
           v-for="groomer in groomers"
           :key="groomer.id"
         >
@@ -54,9 +50,7 @@ export default {
       changePage(el) {
         let element = el.toString();
         let profile = document.getElementById(element);
-
         let userProfile = `
-
         `;
         profile.innerHTML = userProfile;
         return profile;
@@ -86,6 +80,17 @@ export default {
 .holder {
   padding: 2.2em;
 }
+.icons-enter-active {
+  transition: all 1s ease;
+}
+.icons-leave-active {
+  transition: all 1s cubic-bezier(0.3, 0.5, 0.8, 1);
+}
+.icons-enter,
+.icons-leave-to {
+  transform: translateX(15px);
+  opacity: 0;
+}
 
 .text-holder {
   position: absolute;
@@ -109,7 +114,7 @@ export default {
     padding-top: 0em;
   }
   .holder {
-    padding: 5em;
+    padding: 1em;
     padding-top: 0em;
     padding-bottom: 0em;
     padding-right: 14em;

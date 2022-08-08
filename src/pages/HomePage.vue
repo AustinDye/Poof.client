@@ -23,6 +23,7 @@
 
       <!--GROOMERS SECTION-->
       <div ref="bottom"></div>
+
       <router-view />
 
       <!--GALLERY SECTION-->
@@ -101,6 +102,7 @@ h1 {
   font-size: 8em;
   color: rgb(39, 39, 39);
 }
+
 .bot {
   padding: 2em;
 }
