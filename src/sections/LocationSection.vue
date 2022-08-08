@@ -11,6 +11,7 @@
       :zoom="13"
       map-type-id="terrain"
       style="height: 350px; border-radius: 1%"
+      aria-describedby="Map"
     >
       <GMapCluster>
         <GMapMarker
@@ -20,6 +21,7 @@
           :clickable="true"
           :draggable="true"
           @click="center = m.position"
+          aria-describedby="Map"
         />
       </GMapCluster>
     </GMapMap>
