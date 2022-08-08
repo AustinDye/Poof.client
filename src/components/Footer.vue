@@ -42,9 +42,12 @@
         <i class="mdi mdi-content-cut icon-fun ps-2"></i>
       </div>
       <div class="col-1"></div>
-      <div class="col-3 text-center text-dark">
-        <p>PoofPets© 2022</p>
-        <p>Website Developed by Austin Dye</p>
+      <div class="col-3 text-dark">
+        <p class="mb-0">PoofPets© 2022</p>
+        <p>
+          Website Developed by <s>Austin Dye</s>
+          <b class="min-width">The Squad</b>
+        </p>
       </div>
       <div class="col-3 text-center">
         <img
@@ -107,6 +110,11 @@ $angles: (45, 15, 25, 80);
     display: inline-block;
     transform: rotate($angle + deg);
   }
+}
+
+.min-width {
+  word-wrap: avoid;
+  width: min-content;
 }
 
 b {

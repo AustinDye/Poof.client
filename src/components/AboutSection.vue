@@ -41,7 +41,7 @@
                 alt="" /></swiper-slide
             ><swiper-slide
               ><img
-                src="https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/283516196_344714747793835_2385254879953852717_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=30y38CrzFGwAX9JCMro&_nc_ht=scontent-sea1-1.xx&oh=00_AT8QbFzxM12Lb730CxJD2sTwjJR9Y9mq-MGzr_bokjkKcA&oe=62F432DF"
+                src="https://scontent.fboi1-1.fna.fbcdn.net/v/t39.30808-6/278138655_311978764400767_6982268134065803474_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=2x_V9lUlOqMAX-RYJXM&tn=tu3rTWTnrst4-Qth&_nc_ht=scontent.fboi1-1.fna&oh=00_AT9Z4nD2lGA1wuBMK4EeXBMKuuRWO1XT95yf0uEDnajv-w&oe=62F6C987"
                 class=""
                 alt=""
             /></swiper-slide>
