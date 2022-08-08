@@ -16,7 +16,7 @@
     <swiper-slide v-for="r in reviews" :key="r.id">
       <div class="review-container mt-5 pb-0">
         <p class="review-body mb-0 text-center">
-          <q>
+          <q class="text-dark">
             {{ r.body }}
           </q>
         </p>

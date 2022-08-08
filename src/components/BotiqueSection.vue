@@ -13,13 +13,18 @@
   </div>
 
   <div
-    class="col-lg-5 col-md-8 col-sm-12 d-flex justify-content-center align-items-center"
+    class="
+      col-lg-5 col-md-8 col-sm-12
+      d-flex
+      justify-content-center
+      align-items-center
+    "
   >
     <div class="flower d-flex">
       <img
         class="round-image img-fluid"
         src="src/assets/img/botique_round-removebg.png"
-        alt=""
+        alt="shelves with dog treats"
       />
       <div class="petal-1"></div>
       <div class="petal-2"></div>
@@ -35,7 +40,7 @@
       <img
         class="small-image-2 img-fluid"
         src="src/assets/img/dog-shirts-removebg.png"
-        alt=""
+        alt="dog shirts"
       />
       <div class="circle-2"></div>
     </div>
@@ -43,7 +48,7 @@
       <img
         class="small-image img-fluid"
         src="src/assets/img/botiaue_items-removebg.png"
-        alt=""
+        alt="dog toys and brushes"
       />
       <div class="circle"></div>
     </div>
