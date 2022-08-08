@@ -129,6 +129,7 @@ b::after {
 
 b {
   overflow: hidden;
+  font-family: "Inter", sans-serif;
 }
 
 b::after {
