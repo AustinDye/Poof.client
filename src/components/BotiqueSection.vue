@@ -188,6 +188,7 @@ export default {
 
   .flower {
     margin-left: 0em;
+    margin-top: 56vh;
   }
 }
 
