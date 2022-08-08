@@ -18,7 +18,7 @@
       <img
         class="img-fluid three-dogs"
         src="src/assets/img/3dogsnobackground.png"
-        alt=""
+        alt="3 dogs"
       />
     </div>
   </div>

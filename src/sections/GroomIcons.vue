@@ -1,7 +1,11 @@
 <template>
   <div class="groom-circle" :style="`--bg-color: ${groomer.color}`">
     <h3 class="fade-text">{{ groomer.name }}</h3>
-    <img :src="groomer.img" class="groomer-p" />
+    <img
+      :src="groomer.img"
+      class="groomer-p"
+      :alt="'image of {{groomer.name}}'"
+    />
     <p class="groomer-text">{{ groomer.name }}</p>
     <div class="swirly"></div>
     <div class="profile-button btn">

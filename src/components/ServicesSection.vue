@@ -4,7 +4,7 @@
       <img
         class="popout-image"
         src="https://jankrepl.github.io/assets/images/symbolic_regression/main_files/cute-dog-transparent-background.png"
-        alt=""
+        alt="dog"
       />
     </div>
   </div>

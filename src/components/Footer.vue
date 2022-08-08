@@ -50,7 +50,7 @@
         <img
           class="my-3 logo"
           src="src/assets/img/pooflogo-removebg.png"
-          alt=""
+          alt="Poof Pets logo"
         />
       </div>
       <div class="col-3 d-flex justify-content-center">

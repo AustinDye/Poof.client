@@ -25,6 +25,7 @@
             src="src/assets/img/pooflogo-removebg.png"
             class="logo position-absolute"
             @click="$emit('scroll', 'top')"
+            alt="Poof Pets logo"
           />
         </div>
       </router-link>
