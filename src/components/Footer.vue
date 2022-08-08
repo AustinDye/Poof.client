@@ -55,11 +55,11 @@
       </div>
       <div class="col-3 d-flex justify-content-center">
         <div class="links">
-          <b class="text-white" @click="$emit('scroll', 'middle')">Services</b>
-          <b class="text-white" @click="$emit('scroll', 'wayBottom')"
+          <b class="text-dark" @click="$emit('scroll', 'middle')">Services</b>
+          <b class="text-dark" @click="$emit('scroll', 'wayBottom')"
             >Location</b
           >
-          <b class="text-white" @click="$emit('scroll', 'bottom')">About</b>
+          <b class="text-dark" @click="$emit('scroll', 'bottom')">About</b>
         </div>
       </div>
       <div class="col-1"></div>

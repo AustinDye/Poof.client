@@ -1,6 +1,6 @@
 <template>
   <div class="groom-circle" :style="`--bg-color: ${groomer.color}`">
-    <h3 class="fade-text">{{ groomer.name }}</h3>
+    <p class="title-text fade-text">{{ groomer.name }}</p>
     <img
       :src="groomer.img"
       class="groomer-p"
@@ -9,10 +9,10 @@
     <p class="groomer-text">{{ groomer.name }}</p>
     <div class="swirly"></div>
     <div class="profile-button btn">
-      <h4>About</h4>
       <i class="mdi mdi-chevron-right" @click="showGroomerDetails()"></i>
     </div>
   </div>
+
   <router-view groomer="groomer" />
 </template>
 
@@ -53,8 +53,8 @@ h4 {
   border-radius: 100%;
   transition: 400ms;
   position: absolute;
-  width: 18em;
-  height: 18em;
+  width: 285px;
+  height: 285px;
   background: rgba(208, 67, 255, 0);
   border-right: 0em rgb(255, 255, 255) solid;
   border-radius: 100%;
@@ -73,13 +73,12 @@ h4 {
 .groom-circle {
   --bg-color: rgba(0, 0, 255, 0.145);
   margin-top: 6em;
-  height: 18em;
-  width: 18em;
+  height: 285px;
+  width: 285px;
   background: var(--bg-color);
   border-radius: 50%;
   transition: 400ms;
   position: relative;
-  display: flex;
 
   &:hover {
     & > .swirly {
@@ -117,21 +116,20 @@ h4 {
 
 .groomer-p {
   position: absolute;
-  height: 18em;
-  width: 18em;
-
-  border-radius: 50% 10%;
-  border-bottom: 3.5em rgb(255, 255, 255) solid;
+  height: 285px;
+  width: 285px;
+  border-radius: 50% 0%;
+  border-bottom: 50px rgb(255, 255, 255) solid;
   transition: 500ms;
 }
 
 .groomer-text {
-  font-size: 1.5em;
+  font-size: 1.4em;
   border-radius: 2%;
   color: black;
   position: absolute;
   left: 2%;
-  top: 10em;
+  top: 11em;
   bottom: 0.25em;
   z-index: 100;
   transition: 300ms;

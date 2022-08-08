@@ -1,6 +1,6 @@
 <template>
   <div class="col-md-3 pt-md-4 pb-5 mb-5 ps-md-5 text-hold">
-    <h3 class="dimbo fs-1 text-info">the</h3>
+    <p class="big-the dimbo text-info">the</p>
     <h1>Boutique</h1>
     <div class="color-splash mb-3 bg-warning w-50"></div>
     <p>
@@ -66,6 +66,9 @@ export default {
 <style lang="scss" scoped>
 @import "src/assets/scss/_variables.scss";
 
+.big-the {
+  font-size: 4em;
+}
 .circle,
 .circle-2 {
   z-index: 2;
