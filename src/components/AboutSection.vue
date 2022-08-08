@@ -1,7 +1,7 @@
 <template>
-  <div class="row bg-info" v-scrollanimation>
+  <div class="row d-flex justify-content-between bg-info" v-scrollanimation>
     <div
-      class="col-md-3 d-flex align-items-center flex-column text-center pt-5"
+      class="col-lg-3 d-flex align-items-center flex-column text-center pt-5"
       @click.stop="goBack()"
     >
       <h2>{{ groomer.name }}</h2>
@@ -13,16 +13,16 @@
         />
       </div>
     </div>
-    <div class="col-6 p-5">
+    <div class="col-lg-9 p-5">
       <div class="row justify-content-center">
-        <div class="col-6">
+        <div class="col-lg-6">
           <Bee32 />
           <p>
             {{ groomer.description }}
           </p>
         </div>
 
-        <div class="col-6">
+        <div class="col-lg-6 swiper-images">
           <swiper
             :effect="'cards'"
             :grabCursor="true"
@@ -32,19 +32,23 @@
             <swiper-slide
               ><img
                 src="https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/283516196_344714747793835_2385254879953852717_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=30y38CrzFGwAX9JCMro&_nc_ht=scontent-sea1-1.xx&oh=00_AT8QbFzxM12Lb730CxJD2sTwjJR9Y9mq-MGzr_bokjkKcA&oe=62F432DF"
+                class=""
                 alt="" /></swiper-slide
             ><swiper-slide
               ><img
                 src="https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/283516196_344714747793835_2385254879953852717_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=30y38CrzFGwAX9JCMro&_nc_ht=scontent-sea1-1.xx&oh=00_AT8QbFzxM12Lb730CxJD2sTwjJR9Y9mq-MGzr_bokjkKcA&oe=62F432DF"
+                class=""
                 alt="" /></swiper-slide
             ><swiper-slide
               ><img
-                src="https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/283516196_344714747793835_2385254879953852717_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=30y38CrzFGwAX9JCMro&_nc_ht=scontent-sea1-1.xx&oh=00_AT8QbFzxM12Lb730CxJD2sTwjJR9Y9mq-MGzr_bokjkKcA&oe=62F432DF"
+                src="https://scontent.fboi1-1.fna.fbcdn.net/v/t39.30808-6/278138655_311978764400767_6982268134065803474_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=2x_V9lUlOqMAX-RYJXM&tn=tu3rTWTnrst4-Qth&_nc_ht=scontent.fboi1-1.fna&oh=00_AT9Z4nD2lGA1wuBMK4EeXBMKuuRWO1XT95yf0uEDnajv-w&oe=62F6C987"
+                class=""
                 alt=""
             /></swiper-slide>
             <swiper-slide
               ><img
                 src="https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/283516196_344714747793835_2385254879953852717_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=30y38CrzFGwAX9JCMro&_nc_ht=scontent-sea1-1.xx&oh=00_AT8QbFzxM12Lb730CxJD2sTwjJR9Y9mq-MGzr_bokjkKcA&oe=62F432DF"
+                class=""
                 alt=""
             /></swiper-slide>
           </swiper>
@@ -121,6 +125,18 @@ h4 {
   transition: 200ms;
   font-size: 1.75em;
 }
+
+.swiper {
+  @media (max-width: 768px) {
+    width: 240px;
+    height: 320px;
+  }
+  @media (min-width: 1081px) {
+    width: 451px;
+    height: 600px;
+  }
+}
+
 .swiper-slide {
   display: flex;
   align-items: center;
@@ -129,6 +145,7 @@ h4 {
   font-weight: bold;
   color: #fff;
 }
+
 .groom-circle {
   --bg-color: rgba(0, 0, 255, 0.145);
   margin-top: 6em;

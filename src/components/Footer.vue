@@ -42,9 +42,12 @@
         <i class="mdi mdi-content-cut icon-fun ps-2"></i>
       </div>
       <div class="col-1"></div>
-      <div class="col-3 text-center text-dark">
-        <p>PoofPets© 2022</p>
-        <p>Website Developed by Austin Dye</p>
+      <div class="col-3 text-dark">
+        <p class="mb-0">PoofPets© 2022</p>
+        <p>
+          Website Developed by <s>Austin Dye</s>
+          <b class="min-width">The Squad</b>
+        </p>
       </div>
       <div class="col-3 text-center">
         <img
@@ -55,11 +58,11 @@
       </div>
       <div class="col-3 d-flex justify-content-center">
         <div class="links">
-          <b class="text-white" @click="$emit('scroll', 'middle')">Services</b>
-          <b class="text-white" @click="$emit('scroll', 'wayBottom')"
+          <b class="text-dark" @click="$emit('scroll', 'middle')">Services</b>
+          <b class="text-dark" @click="$emit('scroll', 'wayBottom')"
             >Location</b
           >
-          <b class="text-white" @click="$emit('scroll', 'bottom')">About</b>
+          <b class="text-dark" @click="$emit('scroll', 'bottom')">About</b>
         </div>
       </div>
       <div class="col-1"></div>
@@ -109,6 +112,11 @@ $angles: (45, 15, 25, 80);
   }
 }
 
+.min-width {
+  word-wrap: avoid;
+  width: min-content;
+}
+
 b {
   display: block;
   position: relative;
@@ -129,6 +137,7 @@ b::after {
 
 b {
   overflow: hidden;
+  font-family: "Inter", sans-serif;
 }
 
 b::after {
