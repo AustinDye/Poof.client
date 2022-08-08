@@ -10,3 +10,26 @@
 [x] - footer
 [] - mobile layout fixes, centering items
 [x] - header is not size responsive
+
+[] - mobile responsive navbar on various sizes. 
+  [] - Fix logo
+  [] - Navbar is not sticky top
+
+[] - Quote icons on wheel
+[] - Desktop only navbar disappear
+[] - Font-sizing on second section
+
+[] - Format groomer about section
+[] - About animation
+[] - Remove directive
+[] - Get pictures??
+
+[] - Setup google maps section
+
+[] - header and footer animation
+[] - adjust scrollTo function
+[] - Change footer info, sizes, mobile responsive
+
+[] - SEO?
+[] - Domain hosting
+[] - Accessibility
