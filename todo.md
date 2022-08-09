@@ -31,6 +31,6 @@
 [x] - adjust scrollTo function
 [x] - Change footer info, sizes, mobile responsive
 
-[] - SEO?
+[x] - SEO?
 [x] - Domain hosting
 [] - Accessibility
