@@ -9,15 +9,16 @@
         contact-hours
       "
     >
-      <span class="fs-3 dimbo d-flex pt-1"
-        ><PhoneFilled /><a class="text-info" href="tel:555-555-5555"
-          >1-208-555-5555</a
-        >
+      <span class="fs-3 dimbo d-flex pt-1">
+        <i class="mdi mdi-phone pe-1"></i>
+        <a class="text-info" href="tel:555-555-5555">1-208-555-5555</a>
       </span>
 
       <span class="dimbo text-dark d-flex mx-5 pt-1 fs-3">
-        <Time />
-        <a> Mon - Sat: 7:30AM - 3:30PM</a>
+        <h1 class="fs-3 text-info">
+          <i class="mdi mdi-clock-outline pe-1"></i>
+          Mon - Sat: 7:30AM - 3:30PM
+        </h1>
       </span>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark">
