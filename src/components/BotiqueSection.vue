@@ -189,7 +189,7 @@ export default {
     margin-top: 2em;
   }
   .circle-holder {
-    margin-top: 15em;
+    margin-top: 29em;
   }
 }
 

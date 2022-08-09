@@ -1,13 +1,7 @@
 <template>
   <div class="fixed-nav">
     <div
-      class="
-        w-100
-        d-lg-flex d-md-block d-none
-        justify-content-end
-        py-1
-        contact-hours
-      "
+      class="w-100 d-lg-flex d-md-block d-none justify-content-end py-1 contact-hours"
     >
       <span class="fs-3 dimbo d-flex pt-1">
         <i class="mdi mdi-phone pe-1"></i>
@@ -65,7 +59,7 @@
                   class="btn"
                   @click="$emit('scroll', 'bottom')"
                   aria-describedby="About navigation button"
-                  >About</b
+                  >The Staff</b
                 >
               </li>
               <li class="nav-item">
@@ -73,7 +67,7 @@
                   class="btn"
                   @click="$emit('scroll', 'gallery')"
                   aria-describedby="Gallery navigation button"
-                  >Gallery</b
+                  >Boutique</b
                 >
               </li>
               <li class="nav-item dropdown">

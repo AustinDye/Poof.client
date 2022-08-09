@@ -42,14 +42,7 @@
         <i class="mdi mdi-content-cut icon-fun ps-2"></i>
       </div>
       <div
-        class="
-          order-3
-          col-md-3
-          d-flex
-          flex-column
-          align-items-center
-          text-center text-dark
-        "
+        class="order-3 col-md-3 d-flex flex-column align-items-center text-center text-dark"
       >
         <p class="mb-0">PoofPets© 2022</p>
         <p>Website Developed by <b class="">The Squad</b></p>
@@ -67,7 +60,7 @@
           <b class="text-dark" @click="$emit('scroll', 'wayBottom')"
             >Location</b
           >
-          <b class="text-dark" @click="$emit('scroll', 'bottom')">About</b>
+          <b class="text-dark" @click="$emit('scroll', 'bottom')">Staff</b>
         </div>
       </div>
     </div>
