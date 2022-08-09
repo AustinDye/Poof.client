@@ -52,7 +52,7 @@
       <div class="col-3 text-center">
         <img
           class="my-3 logo"
-          src="src/assets/img/pooflogo-removebg.png"
+          src="/src/assets/img/pooflogo-removebg.png"
           alt="Poof Pets logo"
         />
       </div>
@@ -78,7 +78,7 @@ export default {
 };
 </script>
 
-  <style lang="scss" scoped>
+<style lang="scss" scoped>
 $icons: 15;
 $angles: (45, 15, 25, 80);
 

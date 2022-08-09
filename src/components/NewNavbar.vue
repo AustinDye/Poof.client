@@ -1,12 +1,6 @@
 <template>
   <div
-    class="
-      w-100
-      d-lg-flex d-md-block d-none
-      justify-content-end
-      py-1
-      contact-hours
-    "
+    class="w-100 d-lg-flex d-md-block d-none justify-content-end py-1 contact-hours"
   >
     <span class="fs-3 dimbo d-flex pt-1"
       ><PhoneFilled /><a class="text-info" href="tel:555-555-5555"
@@ -24,7 +18,7 @@
       <router-link class="navbar-brand d-flex" :to="{ path: '/home' }">
         <div class="position-absolute logo-container">
           <img
-            src="src/assets/img/pooflogo-removebg.png"
+            src="/src/assets/img/pooflogo-removebg.png"
             class="logo position-absolute"
             @click="$emit('scroll', 'top')"
             alt="Poof Pets logo"

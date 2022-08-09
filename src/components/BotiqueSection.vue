@@ -18,7 +18,7 @@
     <div class="flower d-flex">
       <img
         class="round-image img-fluid"
-        src="src/assets/img/botique_round-removebg.png"
+        src="/src/assets/img/botique_round-removebg.png"
         alt="shelves with dog treats"
       />
       <div class="petal-1"></div>
@@ -34,7 +34,7 @@
     >
       <img
         class="small-image-2 img-fluid"
-        src="src/assets/img/dog-shirts-removebg.png"
+        src="/src/assets/img/dog-shirts-removebg.png"
         alt="dog shirts"
       />
       <div class="circle-2"></div>
@@ -42,7 +42,7 @@
     <div class="d-flex position-relative justify-content-center circle-holder">
       <img
         class="small-image img-fluid"
-        src="src/assets/img/botiaue_items-removebg.png"
+        src="/src/assets/img/botiaue_items-removebg.png"
         alt="dog toys and brushes"
       />
       <div class="circle"></div>

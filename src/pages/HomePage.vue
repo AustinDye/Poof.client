@@ -43,9 +43,8 @@
 import NewNavbar from "../components/NewNavbar.vue";
 import Footer from "../components/Footer.vue";
 import HomeSection from "../components/HomeSection.vue";
-import AboutPage from "./AboutPage.vue";
 import AboutSection from "../components/AboutSection.vue";
-import GallerySection from "../components/GallerySection.vue";
+
 import ServicesSection from "../components/ServicesSection.vue";
 import { useRoute } from "vue-router";
 import { ref } from "@vue/reactivity";
@@ -70,9 +69,9 @@ export default {
     NewNavbar,
     Footer,
     HomeSection,
-    AboutPage,
+
     AboutSection,
-    GallerySection,
+
     ServicesSection,
     BotiqueSection,
     LocationSection,

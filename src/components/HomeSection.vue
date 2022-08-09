@@ -17,7 +17,7 @@
     <div class="d-flex container-fluid pt-5" ref="top">
       <img
         class="img-fluid three-dogs"
-        src="src/assets/img/3dogsnobackground.png"
+        src="/src/assets/img/3dogsnobackground.png"
         alt="3 dogs"
       />
     </div>
