@@ -8,7 +8,7 @@ export const data = {
     name: "Trena Something",
     color: "#ACC6AA",
     description: " lorem lorem lorem ipsum ppissum i ma lorem lorem lorem ipsum ppissum i ma lroem lorem I made this! lorem lorem lorem ipsum ppissum i ma lroem lorem I made this! I made this!",
-    img: "/src/assets/img/wowom-removebg-preview.png"
+    img: "../assets/img/wowom-removebg-preview.png"
   },
    {
       id: 5,
