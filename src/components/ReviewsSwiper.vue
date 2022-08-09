@@ -7,7 +7,6 @@
     }"
     :space-between="50"
     :loop="true"
-    :navigation="true"
     :modules="modules"
     @swiper="onSwiper"
     @slideChange="onSlideChange"

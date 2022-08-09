@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="row navbar justify-content-between">
+    <div class="row mobile-mt navbar justify-content-between">
       <div class="bone-banner">
         <i class="mdi mdi-bone icon-fun ps-2"></i>
         <i class="mdi mdi-bone icon-fun ps-2"></i>
@@ -42,21 +42,27 @@
         <i class="mdi mdi-content-cut icon-fun ps-2"></i>
       </div>
       <div class="col-1"></div>
-      <div class="col-3 text-dark">
+      <div
+        class="
+          order-3
+          col-md-3
+          d-flex
+          flex-column
+          align-items-center
+          text-center text-dark
+        "
+      >
         <p class="mb-0">PoofPets© 2022</p>
-        <p>
-          Website Developed by <s>Austin Dye</s>
-          <b class="min-width">The Squad</b>
-        </p>
+        <p>Website Developed by <b class="">The Squad</b></p>
       </div>
-      <div class="col-3 text-center">
+      <div class="col-md-3 order-2 text-center">
         <img
           class="my-3 logo"
           src="/src/assets/img/pooflogo-removebg.png"
           alt="Poof Pets logo"
         />
       </div>
-      <div class="col-3 d-flex justify-content-center">
+      <div class="col-md-3 order-1 d-flex justify-content-center">
         <div class="links">
           <b class="text-dark" @click="$emit('scroll', 'middle')">Services</b>
           <b class="text-dark" @click="$emit('scroll', 'wayBottom')"
@@ -88,10 +94,34 @@ $angles: (45, 15, 25, 80);
   z-index: 5;
 }
 
+.mobile-mt {
+  @media (max-width: 576px) {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .order-1 {
+    order: 1;
+  }
+  .order-2 {
+    order: 2;
+  }
+  .order-3 {
+    order: 3;
+  }
+}
+
 .links {
   display: flex;
-  flex-direction: column;
-  width: min-content;
+  @media (max-width: 576px) {
+    width: 100%;
+    justify-content: space-around;
+  }
+  @media (min-width: 576px) {
+    flex-direction: column;
+    width: min-content;
+  }
 }
 
 .bone-banner {
@@ -99,9 +129,11 @@ $angles: (45, 15, 25, 80);
   display: flex;
   justify-content: space-around;
   inset: 0;
-  margin: auto;
+  @media (min-width: 768px) {
+    margin: auto;
+    width: 91vw;
+  }
   z-index: -1;
-  width: 91vw;
 }
 
 @for $i from 1 through 40 {

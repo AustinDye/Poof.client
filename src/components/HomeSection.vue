@@ -25,13 +25,12 @@
 </template>
 
 <script>
-import Reviews from "./Reviews.vue";
 import ReviewsSwiper from "./ReviewsSwiper.vue";
 export default {
   setup() {
     return {};
   },
-  components: { Reviews, ReviewsSwiper },
+  components: { ReviewsSwiper },
 };
 </script>
 
