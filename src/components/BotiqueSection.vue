@@ -211,6 +211,10 @@ export default {
     position: relative;
   }
 }
+.small-image-2 {
+  z-index: 3;
+  padding-top: 3em;
+}
 
 @keyframes spin {
   to {
