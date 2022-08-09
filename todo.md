@@ -12,9 +12,9 @@
 <<<<<<< HEAD
 [x] - header is not size responsive
 
-[] - mobile responsive navbar on various sizes. 
-  [] - Fix logo
-  [x] - Navbar is not sticky top
+[] - mobile responsive navbar on various sizes.
+[x] - Fix logo
+[x] - Navbar is not sticky top
 
 [] - Quote icons on wheel
 [] - Desktop only navbar disappear

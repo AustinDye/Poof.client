@@ -27,7 +27,7 @@ root.use(CarbonIconsVue, {
 root.directive('scrollanimation', bart)
 root.use(VueGoogleMaps, {
     load: {
-        key: 'AIzaSyCSYnAG1XV7NV2-O4-Ragzj5XABXOiFUc4',
+        key: 'AIzaSyCJewFLLe3MXIUD63UP__QGkKqkBsHF9s0',
     },
 })
 
