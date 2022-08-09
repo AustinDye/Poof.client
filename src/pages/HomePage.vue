@@ -114,11 +114,12 @@ h1 {
   }
 }
 #midarea {
-  padding: 2em;
+  padding: 1em;
   @media only screen and (orientation: landscape) {
-    padding: 5em;
-    padding-left: 12em;
-    padding-right: 15em;
+    padding-left: 7em;
+    padding-right: 7em;
+    padding-top: 3em;
+    padding-bottom: 3em;
   }
 }
 </style>
