@@ -24,8 +24,10 @@
 
         <div class="col-lg-6 swiper-images">
           <swiper
-            :effect="'cards'"
+            :effect="'flip'"
             :grabCursor="true"
+            :pagination="true"
+            :navigation="true"
             :modules="modules"
             class="mySwiper"
           >
@@ -64,9 +66,11 @@ import { useRoute, useRouter } from "vue-router";
 import { AppState } from "../AppState";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
-import "swiper/css/effect-cards";
+import "swiper/css/effect-flip";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 // import required modules
-import { EffectCards } from "swiper";
+import { EffectFlip, Pagination, Navigation } from "swiper";
 import { Apps32 } from "@carbon/icons-vue";
 
 export default {
@@ -83,7 +87,7 @@ export default {
     });
     return {
       groomer,
-      modules: [EffectCards],
+      modules: [EffectFlip, Pagination, Navigation],
       goBack() {
         router.go(-1);
         groomer.value = {};
