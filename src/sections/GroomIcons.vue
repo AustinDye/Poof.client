@@ -59,6 +59,7 @@ h4 {
   border-right: 0em rgb(255, 255, 255) solid;
   border-radius: 100%;
 }
+
 .profile-button {
   position: absolute;
   display: flex;
@@ -111,6 +112,20 @@ h4 {
       border-radius: 50% 50%;
       border-bottom: 0em rgb(255, 255, 255) solid;
     }
+  }
+}
+
+.groom-circle {
+  animation: createBox 0.25s;
+  // width: 98px;
+  // height: 98px;
+}
+@keyframes createBox {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
   }
 }
 
