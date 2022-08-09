@@ -41,7 +41,6 @@
         <i class="mdi mdi-tennis-ball icon-fun ps-2"></i>
         <i class="mdi mdi-content-cut icon-fun ps-2"></i>
       </div>
-      <div class="col-1"></div>
       <div
         class="
           order-3
@@ -71,7 +70,6 @@
           <b class="text-dark" @click="$emit('scroll', 'bottom')">About</b>
         </div>
       </div>
-      <div class="col-1"></div>
     </div>
   </div>
 </template>
