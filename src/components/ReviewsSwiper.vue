@@ -13,7 +13,7 @@
     class="mySwiper"
   >
     <swiper-slide v-for="r in reviews" :key="r.id">
-      <div class="review-container mt-5 pb-0">
+      <div class="review-container pb-0">
         <p class="review-body mb-0 text-center">
           <q class="text-dark">
             {{ r.body }}
@@ -56,11 +56,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.mySwiper {
+  margin-top: 4rem;
+  @media (max-width: 576px) {
+    margin-top: 1rem;
+  }
+}
 .review-container {
   padding: 1rem;
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
 }
 .review-body {
   position: relative;

@@ -36,6 +36,9 @@ export default {
 
 <style lang="scss" scoped>
 .spacer {
+  @media (max-width: 576px) {
+    height: 22vh;
+  }
   height: 20vh;
 }
 </style>

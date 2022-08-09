@@ -29,7 +29,7 @@
 
 [] - header and footer animation
 [x] - adjust scrollTo function
-[] - Change footer info, sizes, mobile responsive
+[x] - Change footer info, sizes, mobile responsive
 
 [] - SEO?
 [x] - Domain hosting
