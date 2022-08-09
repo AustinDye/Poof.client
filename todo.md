@@ -28,9 +28,9 @@
 [] - Setup google maps section
 
 [] - header and footer animation
-[] - adjust scrollTo function
+[x] - adjust scrollTo function
 [] - Change footer info, sizes, mobile responsive
 
 [] - SEO?
-[] - Domain hosting
+[x] - Domain hosting
 [] - Accessibility

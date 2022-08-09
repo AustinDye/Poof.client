@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="row navbar justify-content-between">
+    <div class="row navbar justify-content-between mt-3">
       <div class="bone-banner">
         <i class="mdi mdi-bone icon-fun ps-2"></i>
         <i class="mdi mdi-bone icon-fun ps-2"></i>
