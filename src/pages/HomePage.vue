@@ -1,5 +1,5 @@
 <template>
-  <header class="sticky-top">
+  <header>
     <NewNavbar @scroll="scrollToElement" />
   </header>
   <main>

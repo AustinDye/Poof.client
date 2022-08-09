@@ -14,7 +14,7 @@
 
 [] - mobile responsive navbar on various sizes. 
   [] - Fix logo
-  [] - Navbar is not sticky top
+  [x] - Navbar is not sticky top
 
 [] - Quote icons on wheel
 [] - Desktop only navbar disappear
