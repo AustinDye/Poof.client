@@ -5,7 +5,10 @@
       <div class="color-splash mb-4 bg-primary"></div>
     </div>
   </div>
-  <div class="col-md-10 col-sm-12 col-lg-4 mb-4">
+  <div class="col-12 justify-content-center d-flex">
+    <p class="fs-4">10542 Fairview Ave, Boise, ID 83704</p>
+  </div>
+  <div class="col-md-10 col-sm-12 col-lg-4 mb-5">
     <GMapMap
       :center="center"
       :zoom="13"
@@ -26,9 +29,6 @@
       </GMapCluster>
     </GMapMap>
     <div class="row">
-      <!-- <div class="col-12 justify-content-center d-flex">
-				
-			</div> -->
       <span class="text-center">
         <p class="fs-4">
           <i class="mdi mdi-clock mx-1"></i>
