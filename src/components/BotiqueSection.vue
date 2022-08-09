@@ -1,5 +1,5 @@
 <template>
-  <div class="col-md-3 pt-md-4 text-hold ps-0 pe-5">
+  <div class="col-md-12 col-lg-6 pt-md-4 pb-md-5 mb-md-5 text-hold ps-0 pe-5">
     <p class="big-the dimbo text-info">the</p>
     <h1>Boutique</h1>
     <div class="color-splash mb-3 bg-warning w-50"></div>
@@ -13,11 +13,11 @@
   </div>
 
   <div
-    class="col-lg-6 col-md-8 col-sm-12 d-flex justify-content-center align-items-center"
+    class="col-lg-4 col-md-5 col-sm-12 d-flex justify-content-center align-items-center"
   >
     <div class="flower d-flex">
       <img
-        class="round-image img-fluid"
+        class="round-image"
         src="/src/assets/img/botique_round-removebg.png"
         alt="shelves with dog treats"
       />
@@ -28,24 +28,30 @@
       <div class="circle-3"></div>
     </div>
   </div>
-  <div class="col-lg-3 d-md-flex d-lg-block d-flex pe-md-5">
-    <div
-      class="d-flex position-relative justify-content-center circle-holder-2"
-    >
+  <div
+    class="col-lg-12 d-md-flex d-block anim-holder justify-content-center align-items-center"
+  >
+    <div class="circle-2">
       <img
         class="small-image-2 img-fluid"
         src="/src/assets/img/dog-shirts-removebg.png"
         alt="dog shirts"
       />
-      <div class="circle-2"></div>
     </div>
-    <div class="d-flex position-relative justify-content-center circle-holder">
+    <ul class="fs-2 text-info modak d-none d-md-block">
+      <li>Treats</li>
+      <li>Dog Clothes</li>
+      <li>Toys</li>
+      <li>Leashes</li>
+      <li>Collars</li>
+      <li>Brushes</li>
+    </ul>
+    <div class="circle">
       <img
-        class="small-image img-fluid"
+        class="small-image"
         src="/src/assets/img/botiaue_items-removebg.png"
         alt="dog toys and brushes"
       />
-      <div class="circle"></div>
     </div>
   </div>
 </template>
@@ -64,30 +70,32 @@ export default {
 .big-the {
   font-size: 4em;
 }
+
 .circle,
-.circle-2 {
+.circle-2,
+.circle-3 {
   z-index: 2;
   position: absolute;
-  height: 240px;
-  width: 240px;
+  height: 280px;
+  width: 280px;
   border-radius: 100%;
 }
-
+.anim-holder {
+  height: 40vh;
+  border-radius: 200px;
+  padding: 12em;
+  border: 19px rgba($success, 0.2) solid;
+  outline: 19px rgba($info, 0.2) solid;
+}
 .circle {
+  right: 20vw;
   background-color: rgba($success, 0.6);
-  border: 0.3em white solid;
+  border: 0.3em rgba(255, 255, 255, 0.54) solid;
 }
 .circle-2 {
-  background-color: rgba($primary, 0.6);
-  border: 0.3em white solid;
-}
-.circle-3 {
-  position: absolute;
-  background-color: rgba($info, 0.4);
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
-  display: none;
+  left: 20vw;
+  background-color: rgba($info, 0.6);
+  border: 0.3em rgba(255, 255, 255, 0.454) solid;
 }
 
 .flower {
@@ -95,14 +103,14 @@ export default {
 }
 
 .round-image {
-  height: 400px;
-  width: 400px;
+  height: 420px;
+  width: 420px;
   z-index: 1;
 }
 
 .small-image {
   z-index: 3;
-  margin-top: 3em;
+  margin-top: 1em;
 }
 .small-image-2 {
   z-index: 3;
@@ -116,9 +124,9 @@ export default {
   overflow: hidden;
   z-index: 0;
   position: absolute;
-  background-color: rgba($primary, 0.5);
-  height: 25em;
-  width: 25em;
+  background-color: rgba($info, 0.4);
+  height: 420px;
+  width: 420px;
   border-radius: 100% 0 100% 0;
   animation: spin 5s;
   animation-iteration-count: infinite;
@@ -129,11 +137,11 @@ export default {
 
 .petal-2 {
   transform: rotate(90deg);
-  background-color: rgba($success, 0.7);
+  background-color: rgba($success, 0.4);
 }
 .petal-3 {
   transform: rotate(90deg);
-  background-color: rgba($success, 0.7);
+  background-color: rgba($success, 0.4);
   border-radius: 0% 100% 0% 100%;
 }
 .petal-4 {
@@ -146,16 +154,29 @@ export default {
   .petal-2,
   .petal-3,
   .petal-4 {
-    display: none;
+    z-index: 0;
   }
   .flower {
-    margin-top: 18em;
-    background-color: rgba($info, 0.4);
-    border-radius: 100%;
-    margin-bottom: 5em;
+    margin-right: 0.5em;
+    margin-left: 50vw;
+    margin-bottom: 8em;
+  }
 
-    margin-left: 6em;
-    position: absolute;
+  .anim-holder {
+    padding: 1em;
+    height: 30vh;
+    z-index: 2;
+  }
+  .circle,
+  .circle-2 {
+    width: 220px;
+    height: 220px;
+  }
+  .circle {
+    right: 10vw;
+  }
+  .circle-2 {
+    left: 10vw;
   }
 }
 .circle-holder,
@@ -173,22 +194,21 @@ export default {
 }
 
 @media only screen and (max-width: 759px) {
-  .circle-holder,
-  .circle-holder-2 {
-    top: 12em;
-    z-index: 3;
-    margin-bottom: 15em;
-  }
   .circle,
   .circle-2 {
-    width: 10em;
-
-    height: 10em;
+    width: 160px;
+    height: 160px;
+  }
+  .anim-holder {
+    margin-top: 1vh;
+    padding: 1em;
+    height: 27vh;
   }
 
   .flower {
     margin-left: 0em;
-    margin-top: 56vh;
+    margin-top: 1em;
+    position: relative;
   }
 }
 
