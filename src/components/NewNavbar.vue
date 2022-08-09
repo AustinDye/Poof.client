@@ -1,86 +1,95 @@
 <template>
-  <div
-    class="w-100 d-lg-flex d-md-block d-none justify-content-end py-1 contact-hours"
-  >
-    <span class="fs-3 dimbo d-flex pt-1"
-      ><PhoneFilled /><a class="text-info" href="tel:555-555-5555"
-        >1-208-555-5555</a
-      >
-    </span>
+  <div class="fixed-nav">
+    <div
+      class="
+        w-100
+        d-lg-flex d-md-block d-none
+        justify-content-end
+        py-1
+        contact-hours
+      "
+    >
+      <span class="fs-3 dimbo d-flex pt-1"
+        ><PhoneFilled /><a class="text-info" href="tel:555-555-5555"
+          >1-208-555-5555</a
+        >
+      </span>
 
-    <span class="dimbo text-dark d-flex mx-5 pt-1 fs-3">
-      <Time />
-      <a> Mon - Sat: 7:30AM - 3:30PM</a>
-    </span>
-  </div>
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="loader">
-      <router-link class="navbar-brand d-flex" :to="{ path: '/home' }">
-        <div class="position-absolute logo-container">
-          <img
-            src="/src/assets/img/pooflogo-removebg.png"
-            class="logo position-absolute"
-            @click="$emit('scroll', 'top')"
-            alt="Poof Pets logo"
-          />
-        </div>
-      </router-link>
+      <span class="dimbo text-dark d-flex mx-5 pt-1 fs-3">
+        <Time />
+        <a> Mon - Sat: 7:30AM - 3:30PM</a>
+      </span>
     </div>
-    <div class="container-fluid">
-      <button
-        class="navbar-toggler collapsed"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbar-items"
-        aria-controls="navbar-items"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div
-        class="collapse navbar-collapse justify-content-md-end"
-        id="navbar-items"
-      >
-        <div class="nav-content">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <b
-                class="btn"
-                @click="$emit('scroll', 'middle')"
-                aria-describedby="Services navigation button"
-                >Services</b
-              >
-            </li>
-            <li class="nav-item">
-              <b
-                class="btn"
-                @click="$emit('scroll', 'bottom')"
-                aria-describedby="About navigation button"
-                >About</b
-              >
-            </li>
-            <li class="nav-item">
-              <b
-                class="btn"
-                @click="$emit('scroll', 'gallery')"
-                aria-describedby="Gallery navigation button"
-                >Gallery</b
-              >
-            </li>
-            <li class="nav-item dropdown">
-              <b
-                class="btn"
-                @click="$emit('scroll', 'wayBottom')"
-                aria-describedby="Location navigation button"
-                >Location</b
-              >
-            </li>
-          </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="loader">
+        <router-link class="navbar-brand d-flex" :to="{ path: '/home' }">
+          <div class="position-absolute logo-container">
+            <img
+              src="/src/assets/img/pooflogo-removebg.png"
+              class="logo position-absolute"
+              @click="$emit('scroll', 'top')"
+              alt="Poof Pets logo"
+            />
+          </div>
+        </router-link>
+      </div>
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-items"
+          aria-controls="navbar-items"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-md-end"
+          id="navbar-items"
+        >
+          <div class="nav-content">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <b
+                  class="btn"
+                  @click="$emit('scroll', 'middle')"
+                  aria-describedby="Services navigation button"
+                  >Services</b
+                >
+              </li>
+              <li class="nav-item">
+                <b
+                  class="btn"
+                  @click="$emit('scroll', 'bottom')"
+                  aria-describedby="About navigation button"
+                  >About</b
+                >
+              </li>
+              <li class="nav-item">
+                <b
+                  class="btn"
+                  @click="$emit('scroll', 'gallery')"
+                  aria-describedby="Gallery navigation button"
+                  >Gallery</b
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <b
+                  class="btn"
+                  @click="$emit('scroll', 'wayBottom')"
+                  aria-describedby="Location navigation button"
+                  >Location</b
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </div>
+  <div class="spacer"></div>
 </template>
 
 <script>
@@ -100,6 +109,15 @@ export default {
   @media (max-width: 578px) {
     padding-right: 1rem;
   }
+}
+.spacer {
+  height: 10em;
+}
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
 }
 
 .logo-container {
