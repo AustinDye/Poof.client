@@ -142,10 +142,16 @@ export default {
 }
 .navbar-nav {
   @media (max-width: 578px) {
-    width: 25%;
+    width: 50%;
     margin-top: 0.5rem;
   }
 }
+
+.nav-item {
+  display: flex;
+  justify-content: start;
+}
+
 .contact-container {
   top: 13px;
   right: 20px;
@@ -208,7 +214,6 @@ b::after {
 
 b:hover {
   cursor: pointer;
-  // background-color: lighten(#acca90, 10);
 }
 
 b:hover::after,
@@ -228,8 +233,8 @@ b:focus::after {
   }
   .logo-container {
     top: -2em !important;
-    left: 10em;
-    border-radius: 100% 100% 0% 10%;
+    left: 9em;
+    border-radius: 50%;
     height: 7.3em;
     width: 7.3em;
   }
