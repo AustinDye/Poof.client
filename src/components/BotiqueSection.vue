@@ -191,6 +191,10 @@ export default {
   .circle-holder {
     margin-top: 29em;
   }
+  .anim-holder {
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+  }
 }
 
 @media only screen and (max-width: 759px) {
